@@ -26,6 +26,7 @@ public class ReadORFile {
 	// Method to get locator type
 
 	public By getLocator(String WebElementName) throws Exception {
+		try {
 
 		// Retrieve value from properties file using key
 		String a = prop.getProperty(WebElementName);
@@ -55,6 +56,9 @@ public class ReadORFile {
 		default:
 			return null;
 		}
+		
+		}catch(Exception e) {System.out.println(e);}
+		return null;
 
 	}
 }
