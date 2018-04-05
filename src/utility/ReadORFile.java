@@ -37,7 +37,7 @@ public class ReadORFile {
 		String locatorValue = s[1];
 
 		switch (locatorType.toLowerCase()) {
-		case "id":
+		/*case "id":
 			return By.id(locatorValue);
 		case "name":
 			return By.name(locatorValue);
@@ -46,15 +46,15 @@ public class ReadORFile {
 		case "linktext":
 			return By.linkText(locatorValue);
 		case "partiallinktext":
-			return By.partialLinkText(locatorValue);
-		case "xpath":
+			return By.partialLinkText(locatorValue);*/
+		case "1":
 			return By.xpath(locatorValue);
-		case "css":
+		/*case "css":
 			return By.cssSelector(locatorValue);
 		case "classname":
 			return By.className(locatorValue);
 		default:
-			return null;
+			return null;*/
 		}
 		
 		}catch(Exception e) {System.out.println(e);}

@@ -11,7 +11,7 @@ DONE=//html/body/div/div[3]/div/div[1]/div[3]/div[2]/div[1]/div/button
 
 
 ######################## GMAIL ###########################
-USER_NAME=xpath://*[@id='identifierId']
-USER_BUTTON=xpath://*[@id='identifierNext']/content/span
-PASSWORD=xpath://*[@id='password']/div[1]/div/div[1]/input
-PASSWORD_BUTTON=xpath://*[@id='passwordNext']/content/span
+USER_NAME=1://*[@id='identifierId']
+USER_BUTTON=1://*[@id='identifierNext']/content/span
+PASSWORD=1://*[@id='password']/div[1]/div/div[1]/input
+PASSWORD_BUTTON=1://*[@id='passwordNext']/content/span
