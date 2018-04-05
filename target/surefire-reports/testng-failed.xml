@@ -12,7 +12,6 @@
         <methods>
           <include name="afterTest"/>
           <include name="afterTest"/>
-          <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
@@ -21,4 +20,19 @@
       </class> <!-- sample.Cross -->
     </classes>
   </test> <!-- Chore tests(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="gecko"/>
+    <classes>
+      <class name="sample.Cross">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="gmail"/>
+        </methods>
+      </class> <!-- sample.Cross -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

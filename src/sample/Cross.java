@@ -23,7 +23,7 @@ public class Cross {
   @BeforeTest
   public void beforeTest(String browser) throws Exception 
   {
-	  OR= new ReadORFile("F:\\Workspace_Seetest\\SELENIUM2\\src\\utility\\OR");
+	  OR= new ReadORFile("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\utility\\OR");
 	  if(browser.equalsIgnoreCase("chrome"))
 	  {
 		 
