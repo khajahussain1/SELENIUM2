@@ -76,12 +76,12 @@ public class Cross {
   public void gmail() throws Exception 
   
   {
-//	  driver.findElement(OR.getLocator("USER_NAME")).sendKeys("hussainonline9");
-//	  System.out.println(OR.getLocator("USER_NAME"));
-//	  driver.findElement(OR.getLocator("USER_BUTTON")).click();
-//	  driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-//	  driver.findElement(OR.getLocator("PASSWORD")).sendKeys("aish@1234$$");
-//	  driver.findElement(OR.getLocator("PASSWORD_BUTTON")).click();
+	  driver.findElement(OR.getLocator("USER_NAME")).sendKeys("hussainonline9");
+	  System.out.println(OR.getLocator("USER_NAME"));
+	  driver.findElement(OR.getLocator("USER_BUTTON")).click();
+	  driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+	  driver.findElement(OR.getLocator("PASSWORD")).sendKeys("aish@1234$$");
+	  driver.findElement(OR.getLocator("PASSWORD_BUTTON")).click();
   }
 	  
   @AfterTest
