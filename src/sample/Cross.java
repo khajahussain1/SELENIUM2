@@ -27,7 +27,7 @@ public class Cross {
 	  if(browser.equalsIgnoreCase("chrome"))
 	  {
 		 
-		  System.setProperty("webdriver.chrome.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\chromedriver.exe");
 		  driver=new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.get("http://spicejet.com/");
@@ -35,7 +35,7 @@ public class Cross {
 		  
 	  }else if(browser.equalsIgnoreCase("gecko"))
 	  {
-		  System.setProperty("webdriver.gecko.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\geckodriver.exe");
 		  driver=new FirefoxDriver();
 		  driver.manage().window().maximize();
 		  driver.get("http://www.gmail.com");
@@ -44,7 +44,7 @@ public class Cross {
 	  }
 	  else if(browser.equalsIgnoreCase("ie"))
 	  {
-		  System.setProperty("webdriver.ie.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\IEDriverServer.exe");
+		  System.setProperty("webdriver.ie.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\IEDriverServer.exe");
 		  InternetExplorerDriver  driver = new InternetExplorerDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20000, TimeUnit.SECONDS);
