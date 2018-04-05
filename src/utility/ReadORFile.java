@@ -35,22 +35,22 @@ public class ReadORFile {
 		String locatorType = s[0];
 		String locatorValue = s[1];
 
-		switch (locatorType.toUpperCase()) {
-		case "ID":
+		switch (locatorType.toLowerCase()) {
+		case "id":
 			return By.id(locatorValue);
-		case "NAME":
+		case "name":
 			return By.name(locatorValue);
-		case "TAGNAME":
+		case "tagname":
 			return By.tagName(locatorValue);
-		case "LINKTEXT":
+		case "linktext":
 			return By.linkText(locatorValue);
-		case "PARTIALLINKTEXT":
+		case "partiallinktext":
 			return By.partialLinkText(locatorValue);
-		case "XPATH":
+		case "xpath":
 			return By.xpath(locatorValue);
-		case "CSS":
+		case "css":
 			return By.cssSelector(locatorValue);
-		case "CLASSNAME":
+		case "classname":
 			return By.className(locatorValue);
 		default:
 			return null;
