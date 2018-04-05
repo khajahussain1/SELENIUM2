@@ -21,20 +21,4 @@
       </class> <!-- sample.Cross -->
     </classes>
   </test> <!-- Chore tests(failed) -->
-  <test name="IETest(failed)" parallel="tests">
-    <parameter name="browser" value="ie"/>
-    <classes>
-      <class name="sample.Cross">
-        <methods>
-          <include name="afterTest"/>
-          <include name="afterTest"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="beforeTest"/>
-          <include name="beforeTest"/>
-          <include name="gmail"/>
-        </methods>
-      </class> <!-- sample.Cross -->
-    </classes>
-  </test> <!-- IETest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
