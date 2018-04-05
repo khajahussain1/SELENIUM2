@@ -26,7 +26,6 @@ public class ReadORFile {
 	// Method to get locator type
 
 	public By getLocator(String WebElementName) throws Exception {
-		try {
 
 		// Retrieve value from properties file using key
 		String a = prop.getProperty(WebElementName);
@@ -36,29 +35,26 @@ public class ReadORFile {
 		String locatorType = s[0];
 		String locatorValue = s[1];
 
-		switch (locatorType.toLowerCase()) {
-		/*case "id":
+		switch (locatorType.toUpperCase()) {
+		case "ID":
 			return By.id(locatorValue);
-		case "name":
+		case "NAME":
 			return By.name(locatorValue);
-		case "tagname":
+		case "TAGNAME":
 			return By.tagName(locatorValue);
-		case "linktext":
+		case "LINKTEXT":
 			return By.linkText(locatorValue);
-		case "partiallinktext":
-			return By.partialLinkText(locatorValue);*/
-		case "1":
+		case "PARTIALLINKTEXT":
+			return By.partialLinkText(locatorValue);
+		case "XPATH":
 			return By.xpath(locatorValue);
-		/*case "css":
+		case "CSS":
 			return By.cssSelector(locatorValue);
-		case "classname":
+		case "CLASSNAME":
 			return By.className(locatorValue);
 		default:
-			return null;*/
+			return null;
 		}
-		
-		}catch(Exception e) {System.out.println(e);}
-		return null;
 
 	}
 }
