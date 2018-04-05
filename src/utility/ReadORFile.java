@@ -6,19 +6,16 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 
-public class ReadORFile 
-{
+public class ReadORFile {
 	Properties prop;
 
 	// COnstructor to load properties file
 	public ReadORFile(String propertiesFilePath) {
 
-		
- 
 		prop = new Properties();
 		try {
 			FileInputStream fis = new FileInputStream(propertiesFilePath);
-			//prop = new Properties();
+			// prop = new Properties();
 			prop.load(fis);
 			fis.close();
 		} catch (IOException e) {
@@ -58,7 +55,6 @@ public class ReadORFile
 		default:
 			return null;
 		}
-		
 
 	}
 }
