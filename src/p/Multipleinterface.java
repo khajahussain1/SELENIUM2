@@ -3,14 +3,14 @@ package p;
 interface printable
 {
 	void print();
-	default void message()
+	/*default void message()
 	{
 		System.out.println("Welcome to default method in interface");
 	}
 	static void staticmethod()
 	{
 		System.out.println("Static method executed");
-	}
+	}*/
 }
 interface wrightable extends printable
 {
@@ -34,9 +34,9 @@ public class Multipleinterface {
 		A2 a=new A2();
 		a.print();
 		a.write();
-		a.message();
+		/*a.message();
 		printable.staticmethod();
-		
+		*/
 		
 		
 
