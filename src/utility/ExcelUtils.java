@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.apache.poi.xssf.usermodel.XSSFRow;
 
 
     public class ExcelUtils {
@@ -21,7 +21,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
                 
            public static Object[][] setExcelFile(String Filepath, String SheetName)throws Exception
            {
-        	   String tabarray[][]=null; 
+        	   String totalrowandcol[][]=null; 
         	   try {
         		   FileInputStream fi=new FileInputStream(Filepath);
         		   
@@ -35,9 +35,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
     			   int totalrows=s.getLastRowNum();
     			   int totalcol=2;
     			   
-    			   tabarray=new String[totalrows][totalcol];
+    			   totalrowandcol=new String[totalrows][totalcol];
     			   
-    			   //int ri=0,cj=0;
     			   int ri=0;
     			   for(int i=startrow; i<=totalrows; i++, ri++)
     			   {
@@ -45,9 +44,14 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
     				   
     				   for(int j=startcol; j<=totalcol; j++, cj++)
     				   {
-    					   tabarray[ri][cj]= getCelldata(i,j);
+    					   totalrowandcol[ri][cj]= getCelldata(i,j);
     					   
-    					   System.out.println(tabarray[ri][cj]);
+    					   System.out.println(totalrowandcol[ri][cj]);
+    					   
+    					  /*if(ExcelUtils.getCelldata(i, j).equalsIgnoreCase(sTestCasesName))
+    						{
+    							break;
+    						}*/
     				   }
     			   }
         	   }catch(FileNotFoundException e) {
@@ -63,7 +67,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 
    				}
 
-   			return(tabarray);
+   			return(totalrowandcol);
 
    			}
 
@@ -88,9 +92,49 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 					throw (e);
 				}
 			}
+		
+		public static String getTestCaseName(String sTestCase)throws Exception{
+		String value = sTestCase;
+		try{
+			int posi = value.indexOf("@");
+			value = value.substring(0, posi);
+			
+			posi = value.lastIndexOf(".");	
+			value = value.substring(posi + 1);
+			
+			return value;
+				}catch (Exception e){throw (e);
+					}
+			}
 			
 		}
     
     
-            
-    	
+   /* public static int getRowContains(String sTestCasesName, int colNum) throws Exception
+	{
+		int i;
+		try {
+			int rowcount=ExcelUtils.getRowUsed();
+			for(i=0; i<rowcount; i++)
+			{
+				if(ExcelUtils.getCellData(i, colNum).equalsIgnoreCase(sTestCasesName))
+				{
+					break;
+				}
+			}
+			return i;
+			
+		}catch(Exception e) {throw (e);}
+
+}
+	public static int getRowUsed() throws Exception
+	{
+		try {
+			int RowCount=s.getLastRowNum();
+			return RowCount;
+			
+		}catch(Exception e) {throw (e);}
+	}    
+    	*/
+    
+    

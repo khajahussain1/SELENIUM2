@@ -29,12 +29,7 @@ public class DataProviderWithExcel_001 {
 
         driver.get("http://www.gmail.com");
         
-        /*//String Path_OR = Constant.Path_OR;
-		FileInputStream fs = new FileInputStream(Constant.Path_OR);
-		OR= new Properties(System.getProperties());
-		OR.load(fs);
-		System.out.println(fs);
-*/
+        
 	  }
 	
   @Test(dataProvider = "Authontication")
@@ -66,9 +61,9 @@ public class DataProviderWithExcel_001 {
   public Object[][] Authontication() throws Exception
   {
 		
-    Object testObject[][] =ExcelUtils.setExcelFile("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx","Sheet1");
+    Object test[][] =ExcelUtils.setExcelFile("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx","Sheet1");
 
-    return (testObject);
+    return (test);
     
     
     }
