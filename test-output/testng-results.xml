@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1861" started-at="2018-04-06T05:00:45Z" finished-at="2018-04-06T05:00:47Z">
+  <suite name="Default suite" duration-ms="1249" started-at="2018-04-06T05:05:02Z" finished-at="2018-04-06T05:05:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1861" started-at="2018-04-06T05:00:45Z" finished-at="2018-04-06T05:00:47Z">
+    <test name="Default test" duration-ms="1249" started-at="2018-04-06T05:05:02Z" finished-at="2018-04-06T05:05:03Z">
       <class name="practiceTestCases.DataProviderWithExcel_001">
-        <test-method status="SKIP" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@1e397ed7]" name="Registration_data" duration-ms="0" started-at="2018-04-06T10:30:47Z" data-provider="Authontication" finished-at="2018-04-06T10:30:47Z">
+        <test-method status="SKIP" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@1e397ed7]" name="Registration_data" duration-ms="0" started-at="2018-04-06T10:35:03Z" data-provider="Authontication" finished-at="2018-04-06T10:35:03Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 2]]>
