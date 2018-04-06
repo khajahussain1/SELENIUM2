@@ -20,7 +20,7 @@ public class DataProviderWithExcel_001 {
 	@BeforeMethod
 	  public void beforeMethod()throws Exception 
 	{
-		System.setProperty("webdriver.gecko.driver", "F:\\Workspace_Oxyze\\SELENIUM\\lib\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\geckodriver.exe");
 		 
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
@@ -66,7 +66,7 @@ public class DataProviderWithExcel_001 {
   public Object[][] Authontication() throws Exception
   {
 		
-    Object[][] testObjArray =ExcelUtils.getTableArray("F:\\Workspace_Seetest\\SELENIUM\\src\\testData\\TestData.xlsx","Sheet1");
+    Object[][] testObjArray =ExcelUtils.getTableArray("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx","Sheet1");
 
     return (testObjArray);
     
