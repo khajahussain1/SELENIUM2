@@ -34,14 +34,14 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
     			   
     			   int totalrows=s.getLastRowNum();
     			   int totalcol=2;
-    			   int ri,cj;
+    			   
     			   tabarray=new String[totalrows][totalcol];
     			   
-    			   
-    			   ri=0;
+    			   int ri=0,cj=0;
+    			   //ri=0;
     			   for(int i=startrow; i<=totalrows; i++, ri++)
     			   {
-    				   cj=0;
+    				   //cj=0;
     				   
     				   for(int j=startcol; j<=totalcol; j++, cj++)
     				   {
