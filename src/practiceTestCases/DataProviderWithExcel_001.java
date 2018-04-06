@@ -66,9 +66,9 @@ public class DataProviderWithExcel_001 {
   public Object[][] Authontication() throws Exception
   {
 		
-    Object[][] testObjArray =ExcelUtils.getTableArray("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx","Sheet1");
+    Object testObject[][] =ExcelUtils.setExcelFile("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx","Sheet1");
 
-    return (testObjArray);
+    return (testObject);
     
     
     }

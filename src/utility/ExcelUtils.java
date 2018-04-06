@@ -19,9 +19,9 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
                
                 
                 
-           public static Object[][] getTableArray(String Filepath, String SheetName)throws Exception
+           public static Object[][] setExcelFile(String Filepath, String SheetName)throws Exception
            {
-        	   String[][] tabarray=null; 
+        	   String tabarray[][]=null; 
         	   try {
         		   FileInputStream fi=new FileInputStream(Filepath);
         		   
