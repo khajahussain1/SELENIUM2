@@ -11,8 +11,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 
 
     public class ExcelUtils {
-                private static XSSFSheet ExcelWSheet;
-                private static XSSFWorkbook ExcelWBook;
+                private static XSSFSheet s;
+                private static XSSFWorkbook wb;
                 private static org.apache.poi.ss.usermodel.Cell Cell;
                 private static XSSFRow Row;
                 public static Properties OR;
@@ -25,23 +25,23 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
         	   try {
         		   FileInputStream fi=new FileInputStream(Filepath);
         		   
-        		   ExcelWBook = new XSSFWorkbook(fi);
+        		   wb = new XSSFWorkbook(fi);
 
-    			   ExcelWSheet = ExcelWBook.getSheet(SheetName);
+    			   s = wb.getSheet(SheetName);
     			   
     			   int startrow=1;
-    			   int startcol=1;
-    			   int ri,cj;
+    			   int startcol=1;  			   
     			   
-    			   int totalrows=ExcelWSheet.getLastRowNum();
+    			   int totalrows=s.getLastRowNum();
     			   int totalcol=2;
     			   
     			   tabarray=new String[totalrows][totalcol];
     			   
-    			   ri=0;
+    			   int ri=0,cj=0;
+    			  // ri=0;
     			   for(int i=startrow; i<=totalrows; i++, ri++)
     			   {
-    				   cj=0;
+    				   //cj=0;
     				   
     				   for(int j=startcol; j<=totalcol; j++, cj++)
     				   {
@@ -71,7 +71,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 		{
 			try {
 				
-				Cell= ExcelWSheet.getRow(RowNum).getCell(ColNum);
+				Cell= s.getRow(RowNum).getCell(ColNum);
 				int dataType= Cell.getCellType();
 				
 				if(dataType==3)

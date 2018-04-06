@@ -50,9 +50,7 @@ public class DataProviderWithExcel_001 {
 	  System.out.println(sPassword);
 	  driver.findElement(By.xpath("//*[@id='passwordNext']/content/span")).click();
  
-	  
-
-      System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
+	  System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
   
   }
