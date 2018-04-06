@@ -37,11 +37,11 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
     			   
     			   tabarray=new String[totalrows][totalcol];
     			   
-    			   int ri=0,cj=0;
-    			   //ri=0;
+    			   //int ri=0,cj=0;
+    			   int ri=0;
     			   for(int i=startrow; i<=totalrows; i++, ri++)
     			   {
-    				   //cj=0;
+    				   int cj=0;
     				   
     				   for(int j=startcol; j<=totalcol; j++, cj++)
     				   {
