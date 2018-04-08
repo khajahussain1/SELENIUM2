@@ -1,57 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1236" started-at="2018-04-06T05:21:50Z" finished-at="2018-04-06T05:21:51Z">
+  <suite name="Default suite" duration-ms="32553" started-at="2018-04-08T15:54:03Z" finished-at="2018-04-08T15:54:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1236" started-at="2018-04-06T05:21:50Z" finished-at="2018-04-06T05:21:51Z">
-      <class name="practiceTestCases.DataProviderWithExcel_001">
-        <test-method status="SKIP" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@1e397ed7]" name="Registration_data" duration-ms="0" started-at="2018-04-06T10:51:51Z" data-provider="Authontication" finished-at="2018-04-06T10:51:51Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 2
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:162)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
-	at utility.ExcelUtils.setExcelFile(ExcelUtils.java:48)
-	at practiceTestCases.DataProviderWithExcel_001.Authontication(DataProviderWithExcel_001.java:69)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:136)
-	... 20 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+    <test name="Default test" duration-ms="32553" started-at="2018-04-08T15:54:03Z" finished-at="2018-04-08T15:54:36Z">
+      <class name="p.Webtable">
+        <test-method status="PASS" signature="MaxFromTable()[pri:0, instance:p.Webtable@2f686d1f]" name="MaxFromTable" duration-ms="32510" started-at="2018-04-08T21:24:03Z" finished-at="2018-04-08T21:24:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Registration_data -->
-      </class> <!-- practiceTestCases.DataProviderWithExcel_001 -->
+        </test-method> <!-- MaxFromTable -->
+      </class> <!-- p.Webtable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

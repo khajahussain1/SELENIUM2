@@ -15,24 +15,29 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class Webtable {
 	static WebDriver driver;
   
-	@Test
+	//@Test
   public void Noofrowsandcols () {
 		
 		  System.setProperty("webdriver.chrome.driver","F:\\\\Workspace_Seetest\\\\SELENIUM1\\\\lib\\\\chromedriver.exe");
 		  driver= new ChromeDriver();
 		  driver.manage().window().maximize();
-		  driver.get("http://money.rediff.com/gainers/bsc/dailygroupa?");         
-	        List  col = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
+		  driver.get("http://money.rediff.com/gainers/bsc/dailygroupa?"); 
+		  
+	        List <WebElement>  col = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
 	        System.out.println("No of cols are : " +col.size()); 
-	      //*[@id="leftcontainer"]/table/tbody/tr[2]/td[1]/a
-	        List  rows = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]")); 
+	        
+	        List <WebElement>  rows = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]")); 
 	        System.out.println("No of rows are : " + rows.size());
-	        //driver.close();
+	        
+           List <WebElement> noofrowsnoofcolums=driver.findElements(By.xpath("//*[@id='leftcontainer']/table/tbody/tr/td"));
+			
+			System.out.println("no of rows * no of columes are : "+noofrowsnoofcolums.size());
 	        
 	        
 	     }
@@ -58,23 +63,26 @@ public class Webtable {
 		    WebElement cellIneed = driver.findElement(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr[3]/td[2]"));
 		    String valueIneed = cellIneed.getText();
 		    System.out.println("Cell value is : " + valueIneed); 
+		    
+		    
     }
 	
-	//@Test
+	@Test
 	public void MaxFromTable () throws ParseException
 	{
 		System.setProperty("webdriver.chrome.driver","F:\\Workspace_Seetest\\SELENIUM1\\lib\\chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://money.rediff.com/gainers/bsc/daily/groupa?"); 
+		
 		 String max;
 	     double m=0,r=0;
 		 
 	       //No. of Columns
-	        List  col = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
+	        List<WebElement>  col = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
 	        System.out.println("Total No of columns are : " +col.size());
 	        //No.of rows
-	        List  rows = driver.findElements(By.xpath (".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
+	        List<WebElement>  rows = driver.findElements(By.xpath (".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
 	        System.out.println("Total No of rows are : " + rows.size());
 	        
 	        for (int i =1;i<rows.size();i++)
@@ -103,6 +111,32 @@ public class Webtable {
 		driver.close();
 		driver.quit();		
 	}
+	
+	//@Test
+	public void getparticularrowvalue()
+	{
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://toolsqa.wpengine.com/automation-practice-table");
+		
+		String s="Taipei 101";
+		for (int i = 1; i <5; i++) {			
+			String svalue=driver.findElement(By.xpath("//*[@id='content']/table/tbody/tr["+ i + "]/th")).getText();
+			if (svalue.equalsIgnoreCase(s)) {
+				System.out.print(svalue+" : ");
+				for (int j = 1; j <=5; j++) {
+					String cellvalue=driver.findElement(By.xpath("//*[@id='content']/table/tbody/tr["+ i +"]/td["+ j + "]")).getText();
+					System.out.print(" " +cellvalue);
+					
+				}
+				break;
+				
+				
+			}
+			System.out.println();
+		}
+		
+			}
 }
 	
 

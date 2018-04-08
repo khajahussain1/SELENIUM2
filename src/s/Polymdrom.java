@@ -1,8 +1,11 @@
 package s;
 
+import org.testng.annotations.Test;
+
 public class Polymdrom {
 	
-	public static void main(String args[])
+	//@Test
+	public void polymdromindigit()
 	{
 		int r,sum=0,temp;
 		int n=454;
@@ -26,5 +29,43 @@ public class Polymdrom {
 		
 		
 	}
+	//@Test
+	public void polymdrominstring()
+	{
+		String s = "malayalam";
 
-}
+		String str = "";
+		
+		for (int i = s.length() - 1; i >= 0; i--) {
+			
+			str = str + s.charAt(i);
+		}
+		
+		if (s.equalsIgnoreCase(str)) {
+		
+				
+			System.out.println(s + " is palindrome");
+                 }
+			
+		else {
+			System.out.println(s + " is not a palindrome");
+		}
+	}
+	
+	@Test
+	public void reverseString()
+	{
+		String s="madam";
+		String a[]=s.split("");
+		
+		for (int i = s.length()-1; i >=0; i--) {
+			System.out.print(" "+a[i]);
+			
+		}
+	}
+	}
+	
+	
+	
+
+
