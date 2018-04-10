@@ -35,7 +35,8 @@ public class ReadORFile {
 		String locatorType = s[0];
 		String locatorValue = s[1];
 
-		switch (locatorType.toUpperCase()) {
+		switch (locatorType.toUpperCase()) 
+		{
 		case "ID":
 			return By.id(locatorValue);
 		case "NAME":
