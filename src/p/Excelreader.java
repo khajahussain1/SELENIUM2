@@ -24,7 +24,7 @@ public class Excelreader {
       XSSFSheet s=wb.getSheet("Sheet1");
       
       Iterator<Row> it=s.iterator();
-      it.next();
+     it.next();
       
       ArrayList<String> list=new ArrayList<String>();
       
@@ -39,6 +39,7 @@ public class Excelreader {
 	{
 		driver=new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		driver.get("https://store.rightstartmath.com/login.php?from=account.php");
 		ArrayList<String> username=readdata(0);
 		ArrayList<String> password=readdata(1);
@@ -47,6 +48,7 @@ public class Excelreader {
 			
 		driver.findElement(By.id("login_email")).sendKeys(username.get(i));
 		driver.findElement(By.id("login_pass")).sendKeys(password.get(i));
+		driver.findElement(By.id("LoginButton")).click();
 		}
 		
 	}
@@ -54,7 +56,7 @@ public class Excelreader {
  public static void main(String args[]) throws IOException
  {
 	 Excelreader ex=new Excelreader();
-	 ex.readdata(1);
+	// ex.readdata(1);
 	 ex.ts();
  }
 }
