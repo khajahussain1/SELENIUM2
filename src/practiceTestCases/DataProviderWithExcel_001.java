@@ -17,7 +17,7 @@ public class DataProviderWithExcel_001 {
 	
 	public WebDriver driver;
 	
-	@BeforeMethod
+	//@BeforeMethod
 	  public void beforeMethod()throws Exception 
 	{
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\geckodriver.exe");
@@ -36,7 +36,7 @@ public class DataProviderWithExcel_001 {
   public void Registration_data(String sUserName, String sPassword)throws  Exception
   {
 			
-	  driver.findElement(By.xpath("//*[@id='identifierId']")).sendKeys(sUserName);
+	  /*driver.findElement(By.xpath("//*[@id='identifierId']")).sendKeys(sUserName);
 		System.out.println(sUserName);
 
 	  driver.findElement(By.xpath("//*[@id='identifierNext']/content/span")).click();
@@ -45,7 +45,7 @@ public class DataProviderWithExcel_001 {
 	  System.out.println(sPassword);
 	  driver.findElement(By.xpath("//*[@id='passwordNext']/content/span")).click();
  
-	  System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
+	  System.out.println(" Login Successfully, now it is the time to Log Off buddy.");*/
 
   
   }

@@ -34,6 +34,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
     			   
     			   int totalrows=s.getLastRowNum();
     			   int totalcol=2;
+    			   //int totalcol=s.getRow(2).getLastCellNum();
     			   
     			   totalrowandcol=new String[totalrows][totalcol];
     			   
@@ -46,13 +47,14 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
     				   {
     					   totalrowandcol[ri][cj]= getCelldata(i,j);
     					   
-    					   System.out.println(totalrowandcol[ri][cj]);
+    					   System.out.print(totalrowandcol[ri][cj]);
     					   
     					  /*if(ExcelUtils.getCelldata(i, j).equalsIgnoreCase(sTestCasesName))
     						{
     							break;
     						}*/
     				   }
+    				   System.out.println();
     			   }
         	   }catch(FileNotFoundException e) {
         		   System.out.println("Could not read the Excel sheet");

@@ -1,33 +1,16 @@
 package p;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.io.File;
 
-public class practies {
-	public static WebDriver driver;
+import org.apache.poi.ss.usermodel.Workbook;
 
-
+public class practies 
+{
 	public static void main(String[] args) {
-		 System.setProperty("webdriver.chrome.driver","F:\\\\Workspace_Seetest\\\\SELENIUM1\\\\lib\\\\chromedriver.exe");
-		  driver= new ChromeDriver();
-		  driver.manage().window().maximize();
-		  driver.get("http://money.rediff.com/gainers/bsc/dailygroupa?");  
+		File fi=new File("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx");
+		//Workbook wb=Workbook.getworkbook(fi);
 		
-		String noofrows=driver.findElement(By.xpath("//*[@id='leftcontainer']/table/tbody/tr[3]/td[2]")).getText();
-		
-		System.out.println("No of rows are: "+noofrows);
-		
-		/*List <WebElement> noofcol=driver.findElements(By.xpath("//*[@id='leftcontainer']/table/tbody/tr[1]/td"));
-		
-		System.out.println("No of columes are : "+noofcol.size());
-		
-        List <WebElement> noofrowsnoofcolums=driver.findElements(By.xpath("//*[@id='leftcontainer']/table/tbody/tr/td"));
-		
-		System.out.println("no of rows * no of columes are : "+noofrowsnoofcolums.size());
- */
-		
-		}
-		
-				
 	}
+}
+				
+	
