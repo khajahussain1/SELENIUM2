@@ -60,7 +60,7 @@
  <class name="sample.Cross">
  <methods>
  
- <include name ="gmail">
+ <include name ="spicejet">
  </include>
  
  </methods>
