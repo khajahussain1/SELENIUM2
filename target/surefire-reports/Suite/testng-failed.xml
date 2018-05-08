@@ -16,7 +16,7 @@
           <include name="beforeTest"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
-          <include name="gmail"/>
+          <include name="spicejet"/>
         </methods>
       </class> <!-- sample.Cross -->
     </classes>

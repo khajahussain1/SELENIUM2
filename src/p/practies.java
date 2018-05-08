@@ -1,14 +1,18 @@
 package p;
 
-import java.io.File;
+import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.ss.usermodel.Workbook;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class practies 
 {
 	public static void main(String[] args) {
-		File fi=new File("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx");
-		//Workbook wb=Workbook.getworkbook(fi);
+		 System.setProperty("webdriver.ie.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\IEDriverServer.exe");
+		  WebDriver driver = new InternetExplorerDriver();
+		  driver.manage().window().maximize();
+		  driver.manage().timeouts().implicitlyWait(20000, TimeUnit.SECONDS);
+		  driver.get("http://spicejet.com/");
 		
 	}
 }
