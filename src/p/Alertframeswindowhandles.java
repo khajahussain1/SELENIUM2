@@ -49,28 +49,29 @@ public class Alertframeswindowhandles {
 		Alert text = driver.switchTo().alert();
 		System.out.println(text.getText());
 		
-		//how to switch to frames
 		
+		//how to switch to frames		
 		driver.switchTo().frame(0);
 		driver.switchTo().frame("frmaename");
 		driver.switchTo().frame("framewebelemet");
 		
-		//how to get windowhandle
-		
+		//how to get windowhandle		
 		String pwindow = driver.getWindowHandle();
 		Set<String> allwindows = driver.getWindowHandles();
 		Iterator<String> allwindow = allwindows.iterator();
+		
 		String parantwindow = allwindow.next();
 		driver.switchTo().window(parantwindow);
+		
 		String chiledwindow = allwindow.next();
 		driver.switchTo().window(chiledwindow);
 		driver.switchTo().defaultContent();
 		
 		//wait conditions
-		//implicitywait aplicable for entar page
+		//implicitywait aplicable for entair page
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 		
-		//explicit wait applied some conditions whre your adviseted statement popup will appear after 30 sencond that time it will aplicable.
+		//explicit wait applied some conditions where your adviseted statement popup will appear after 30 sencond that time it will aplicable.
 		
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
@@ -89,7 +90,7 @@ public class Alertframeswindowhandles {
 		//how to get the data of dropdowns
 		List<WebElement> op = se.getOptions();
 		
-		//how to do dragand drop
+		//how to do draganddrop
 		Actions a1=new Actions(driver);
 		a1.dragAndDrop(driver.findElement(By.xpath("")), driver.findElement(By.xpath("")));
 		
@@ -160,7 +161,7 @@ public class Alertframeswindowhandles {
 		//how to get the atribute value from the webelement
 		System.out.println(driver.findElement(By.xpath("")).getAttribute("name")); //here we will get name of element
 		
-		//how to tap on submit button with using click method in selenium
+		//how to tap on submit button with out using click method in selenium
 		
 		driver.findElement(By.xpath("")).sendKeys(Keys.ENTER);
 		

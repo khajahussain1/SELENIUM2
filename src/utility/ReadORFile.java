@@ -53,8 +53,7 @@ public class ReadORFile {
 			return By.cssSelector(locatorValue);
 		case "CLASSNAME":
 			return By.className(locatorValue);
-		default:
-			return null;
+		default:return null;
 		}
 
 	}
