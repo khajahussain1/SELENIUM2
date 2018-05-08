@@ -12,7 +12,7 @@ public class practies
 		  WebDriver driver = new InternetExplorerDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20000, TimeUnit.SECONDS);
-		  driver.get("http://spicejet.com/");
+		  //driver.get("http://spicejet.com/");
 		
 	}
 }
