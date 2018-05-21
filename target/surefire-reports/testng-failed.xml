@@ -6,28 +6,11 @@
     <listener class-name="p.Listener"/>
     <listener class-name="sample.ExtentReporterNG"/>
   </listeners>
-  <test name="Chore tests(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="sample.Cross">
-        <methods>
-          <include name="afterTest"/>
-          <include name="afterTest"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="beforeTest"/>
-          <include name="beforeTest"/>
-          <include name="spicejet"/>
-        </methods>
-      </class> <!-- sample.Cross -->
-    </classes>
-  </test> <!-- Chore tests(failed) -->
   <test name="IETest(failed)" parallel="tests">
     <parameter name="browser" value="ie"/>
     <classes>
       <class name="sample.Cross">
         <methods>
-          <include name="afterTest"/>
           <include name="afterTest"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
@@ -38,4 +21,34 @@
       </class> <!-- sample.Cross -->
     </classes>
   </test> <!-- IETest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="gecko"/>
+    <classes>
+      <class name="sample.Cross">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="gmail"/>
+        </methods>
+      </class> <!-- sample.Cross -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="Chore tests(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="sample.Cross">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="spicejet"/>
+        </methods>
+      </class> <!-- sample.Cross -->
+    </classes>
+  </test> <!-- Chore tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
