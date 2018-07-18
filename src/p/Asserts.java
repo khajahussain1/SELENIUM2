@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class Asserts {
 	public WebDriver driver;
 	
-	//@Test
+	@Test
 	public void asserttrue()
 	{
 		System.setProperty("webdriver.chrome.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\chromedriver.exe");
@@ -35,9 +35,14 @@ public class Asserts {
 	      //My Account will be clicked only if the above condition is true
 	 
 	      myAccount.click();
-	 
 	}
-	@Test
+	      
+	      
+	      
+	    	  
+	 
+	
+	//@Test
 	public void assertfalse()
 	{
 		System.setProperty("webdriver.chrome.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\chromedriver.exe");
