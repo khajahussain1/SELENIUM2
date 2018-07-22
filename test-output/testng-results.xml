@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="99" started-at="2018-06-22T15:34:15Z" finished-at="2018-06-22T15:34:15Z">
+  <suite name="Default suite" duration-ms="133" started-at="2018-07-21T14:44:05Z" finished-at="2018-07-21T14:44:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="99" started-at="2018-06-22T15:34:15Z" finished-at="2018-06-22T15:34:15Z">
-      <class name="p.Asserts">
-        <test-method status="PASS" signature="asserttrue()[pri:0, instance:p.Asserts@2f686d1f]" name="asserttrue" duration-ms="42" started-at="2018-06-22T21:04:15Z" finished-at="2018-06-22T21:04:15Z">
+    <test name="Default test" duration-ms="133" started-at="2018-07-21T14:44:05Z" finished-at="2018-07-21T14:44:05Z">
+      <class name="s.A2">
+        <test-method status="PASS" signature="f()[pri:0, instance:s.A2@553f17c]" name="f" duration-ms="34" started-at="2018-07-21T20:14:05Z" finished-at="2018-07-21T20:14:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- asserttrue -->
-      </class> <!-- p.Asserts -->
+        </test-method> <!-- f -->
+      </class> <!-- s.A2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

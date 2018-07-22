@@ -1,7 +1,6 @@
 package p;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,7 +29,7 @@ public class Dropdownvalues {
 			}
 			
 			
-			System.out.println(driver.getCurrentUrl());
+			//System.out.println(driver.getCurrentUrl());
 			//driver.get("gmail.com");
 			
 	}
