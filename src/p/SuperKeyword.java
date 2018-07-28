@@ -13,7 +13,7 @@ class A1{
 	}
 	void message()
 	{
-		//System.out.println("Welcome to Chennai");
+		System.out.println("Welcome to Chennai");
 	}
 }
 

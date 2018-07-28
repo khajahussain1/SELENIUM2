@@ -12,7 +12,7 @@ abstract class B implements A
 {
 	public void c()
 	{
-		System.out.println("C is a method");
+		System.out.println("c is a method");
 	}
 }
 class M extends B
@@ -35,7 +35,7 @@ public class Abstractandinterface {
 
 	public static void main(String[] args) {
 		
-M m=new M();
+A m=new M();
 m.a();
 m.b();
 m.c();
