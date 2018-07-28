@@ -1,30 +1,36 @@
 package p;
 
-class Dog1
-{
-	protected int a=10;
-	
-	public void s()
-	{
-		System.out.println("s is executed");
-	}
-}
-class Dog2 extends Dog1
-{
-	public void t()
-	{
-		System.out.println(a);
-	}
-}
+
 
 public class Pract 
 {
+	int rollnum;
+	String name;
+	float salary;
+	
+	Pract(int rollnum,	String name)
+	{
+		this.rollnum=rollnum;
+		this.name=name;
+		
+	}
+	
+	Pract(int rollnum,	String name, float salary)
+	{
+		this(rollnum,name);
+		this.salary=salary;
+	}
+	
+	void desplay()
+	{
+		System.out.println(rollnum+" "+name+ " "+ salary);
+	}
 	public static void main(String[] args) 
 	{
-		Dog2 d=new Dog2();
-		d.t();
-		d.s();
-		
+		Pract p=new Pract(101, "khaja");
+		Pract p1=new Pract(102, "khaja", 24000f);
+		p.desplay();
+		p1.desplay();
 	}
 
 }

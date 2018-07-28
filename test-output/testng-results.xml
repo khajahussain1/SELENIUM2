@@ -1,17 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="133" started-at="2018-07-21T14:44:05Z" finished-at="2018-07-21T14:44:05Z">
+  <suite name="Default suite" duration-ms="1263" started-at="2018-07-26T07:57:04Z" finished-at="2018-07-26T07:57:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="133" started-at="2018-07-21T14:44:05Z" finished-at="2018-07-21T14:44:05Z">
-      <class name="s.A2">
-        <test-method status="PASS" signature="f()[pri:0, instance:s.A2@553f17c]" name="f" duration-ms="34" started-at="2018-07-21T20:14:05Z" finished-at="2018-07-21T20:14:05Z">
+    <test name="Default test" duration-ms="1263" started-at="2018-07-26T07:57:04Z" finished-at="2018-07-26T07:57:05Z">
+      <class name="practiceTestCases.DataProviderWithExcel_001">
+        <test-method status="PASS" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="Registration_data" duration-ms="16" started-at="2018-07-26T13:27:05Z" data-provider="Authontication" finished-at="2018-07-26T13:27:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hussainonline9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aish@1234$$]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- s.A2 -->
+        </test-method> <!-- Registration_data -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="afterMethod" is-config="true" duration-ms="3" started-at="2018-07-26T13:27:05Z" finished-at="2018-07-26T13:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="Registration_data" duration-ms="5" started-at="2018-07-26T13:27:05Z" data-provider="Authontication" finished-at="2018-07-26T13:27:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[poolakhaja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aish@1234$$$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_data -->
+        <test-method status="PASS" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="Registration_data" duration-ms="23" started-at="2018-07-26T13:27:05Z" data-provider="Authontication" finished-at="2018-07-26T13:27:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[khaja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hussain]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_data -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-26T13:27:05Z" finished-at="2018-07-26T13:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-07-26T13:27:05Z" finished-at="2018-07-26T13:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="Registration_data" duration-ms="3" started-at="2018-07-26T13:27:05Z" data-provider="Authontication" finished-at="2018-07-26T13:27:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_data -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-26T13:27:05Z" finished-at="2018-07-26T13:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="Registration_data" duration-ms="4" started-at="2018-07-26T13:27:05Z" data-provider="Authontication" finished-at="2018-07-26T13:27:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kjunh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mkjnh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_data -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3f49dace]" name="afterMethod" is-config="true" duration-ms="5" started-at="2018-07-26T13:27:05Z" finished-at="2018-07-26T13:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- practiceTestCases.DataProviderWithExcel_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

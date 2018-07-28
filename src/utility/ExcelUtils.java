@@ -33,7 +33,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
     			   int startcol=1;  			   
     			   
     			   int totalrows=s.getLastRowNum();
-    			   int totalcol=2;
+    			  int totalcol=2;
     			   //int totalcol=s.getRow(2).getLastCellNum();
     			   
     			   totalrowandcol=new String[totalrows][totalcol];
