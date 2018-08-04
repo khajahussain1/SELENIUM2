@@ -2,7 +2,6 @@ package practiceTestCases;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -16,11 +15,14 @@ public class DataProviderWithExcel_001 {
 	
 	
 	public WebDriver driver;
+	public String testcasename;
+	public int testcaserownum;
+public Loginpageobjects loginpage;
 	
-	//@BeforeMethod
+	@BeforeMethod
 	  public void beforeMethod()throws Exception 
 	{
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/lib/geckodriver.exe");
 		 
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
@@ -32,9 +34,16 @@ public class DataProviderWithExcel_001 {
         
 	  }
 	
-  @Test(dataProvider = "Authontication")
+  @Test(priority=0,dataProvider = "Authontication")
   public void Registration_data(String sUserName, String sPassword)throws  Exception
   {
+	  loginpage=new Loginpageobjects(driver);
+	  loginpage.setusername(sUserName);
+	  loginpage.next_button.click();
+	  loginpage.setpassword(sPassword);
+	  loginpage.clickonsigninbutton();
+	  
+	  //System.out.println(sUserName+" "+  sPassword);
 			
 	  /*driver.findElement(By.xpath("//*[@id='identifierId']")).sendKeys(sUserName);
 		System.out.println(sUserName);
@@ -49,6 +58,15 @@ public class DataProviderWithExcel_001 {
 
   
   }
+  @Test(priority=1, dataProvider = "Authontication")
+  public void Registration(String sUserName, String sPassword)throws  Exception
+  {
+	  loginpage=new Loginpageobjects(driver);
+	  loginpage.setusername(sUserName);
+	  loginpage.next_button.click();
+	  loginpage.setpassword(sPassword);
+	  loginpage.clickonsigninbutton();
+  }
   
   
 
@@ -60,8 +78,15 @@ public class DataProviderWithExcel_001 {
   @DataProvider
   public Object[][] Authontication() throws Exception
   {
+	  testcasename=this.getClass().getSimpleName();
+	  System.out.println(testcasename);
+	  
+	  ExcelUtils.excelfile(System.getProperty("user.dir")+"/src/testData/TestData.xlsx","Sheet1");
+	  
+	  testcaserownum=ExcelUtils.gettestcasename(testcasename);
+	  System.out.println(testcaserownum);
 		
-    Object test[][] =ExcelUtils.setExcelFile("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\testData\\TestData.xlsx","Sheet1");
+    Object test[][] =ExcelUtils.setExcelFile(System.getProperty("user.dir")+"/src/testData/TestData.xlsx","Sheet1", testcaserownum);
 
     return (test);
     

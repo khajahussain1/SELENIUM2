@@ -21,15 +21,16 @@ public class Webtable {
 	static WebDriver driver;
   
 	//@Test
-  public void Noofrowsandcols () {
+  public void countNoofrowsandcols () {
 		
 		  System.setProperty("webdriver.chrome.driver","F:\\\\Workspace_Seetest\\\\SELENIUM1\\\\lib\\\\chromedriver.exe");
 		  driver= new ChromeDriver();
 		  driver.manage().window().maximize();
-		  driver.get("http://money.rediff.com/gainers/bsc/dailygroupa?");         
-	        List  col = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
+		  driver.get("http://money.rediff.com/gainers/bsc/dailygroupa?");    
+		  
+	        List<WebElement>  col = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
 	        System.out.println("No of cols are : " +col.size()); 
-	        List  rows = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]")); 
+	        List<WebElement>  rows = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]")); 
 	        System.out.println("No of rows are : " + rows.size());
 	        //driver.close();
 	     }
@@ -57,7 +58,7 @@ public class Webtable {
 		    System.out.println("Cell value is : " + valueIneed); 
     }
 	
-	//@Test
+	@Test
 	public void MaxFromTable () throws ParseException
 	{
 		System.setProperty("webdriver.chrome.driver","F:\\Workspace_Seetest\\SELENIUM1\\lib\\chromedriver.exe");
@@ -68,10 +69,10 @@ public class Webtable {
 	     double m=0,r=0;
 		 
 	       //No. of Columns
-	        List  col = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
+	        List<WebElement>  col = driver.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
 	        System.out.println("Total No of columns are : " +col.size());
 	        //No.of rows
-	        List  rows = driver.findElements(By.xpath (".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
+	        List<WebElement>  rows = driver.findElements(By.xpath (".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
 	        System.out.println("Total No of rows are : " + rows.size());
 	        
 	        for (int i =1;i<rows.size();i++)
@@ -89,7 +90,7 @@ public class Webtable {
 	        System.out.println("Maximum current price is : "+ r);
    }
 	
-	@Test
+	//@Test
 	public static void captureScreenMethod() throws Exception{
 		System.setProperty("webdriver.chrome.driver","F:\\Workspace_Seetest\\SELENIUM1\\lib\\chromedriver.exe");
 		  driver= new ChromeDriver();

@@ -1,6 +1,11 @@
 package p;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 public class ArraysExamples {
 
@@ -25,6 +30,18 @@ public class ArraysExamples {
 		minAndMaxInAnArray();
 		System.out.println("==================================");
 		reverseArrayElements();
+		insertvalueparticularelement();
+		System.out.println("==================================");
+		convertArraylisttoArray();
+		System.out.println("==================================");
+		convertArraytoArraylist();
+		System.out.println("==================================");
+		removeduplicatesinayyaylist();
+		System.out.println("==================================");
+		reverseArraylist();
+		System.out.println("==================================");
+		
+		
 	}
 
 	public static void diapsyDasheshAsSquare() {
@@ -147,6 +164,28 @@ public class ArraysExamples {
 			System.out.println(a[i]);
 		}
 	}
+	
+	public static void insertvalueparticularelement() 
+	{
+		int insertvalue=300;
+		int replacevalueparticularelement=54;
+		
+		for (int i = 0; i < a.length; i++) 
+		{
+			if (a[i]==replacevalueparticularelement) 
+			{
+				a[i]=insertvalue;
+				
+			}
+			
+		}
+		for (int i = 0; i < a.length; i++) 
+		{
+			System.out.println(" "+a[i]);
+			
+		}
+		
+	}
 
 	/*
 	 * to find min and max values of an array elements
@@ -183,5 +222,51 @@ public class ArraysExamples {
 			a[a.length - i - 1] = temp;
 		}
 		System.out.println("Reverse array : " + Arrays.toString(a));
+	}
+	
+	public static void convertArraylisttoArray() 
+	{
+		List<String> list=new ArrayList<String>();
+		list.add("khaja");
+		list.add("hussain");
+		list.add("rahim");
+		
+		String a[]=new String[list.size()];
+		list.toArray(a);
+		System.out.println(Arrays.toString(a));
+		
+	}
+	
+	public static void convertArraytoArraylist() 
+	{
+		String a[]= {"Khaja", "Hussain", "poola"};
+		List<String> lt=Arrays.asList(a);
+		System.out.println(lt);
+		
+	}
+	
+	public static void removeduplicatesinayyaylist() 
+	{
+		List<String> list=new ArrayList<String>();
+		list.add("khaja");
+		list.add("hussain");
+		list.add("rahim");
+		
+		Set<String> s=new LinkedHashSet<String>(list);
+		System.out.println(s);
+		
+	}
+	public static void reverseArraylist() 
+	{
+List<String> list=new ArrayList<String>();
+		
+		list.add("khaja");
+		list.add("hussain");
+		list.add("poola");
+		list.add("rahim");
+		
+Collections.reverse(list);
+System.out.println(list);
+		
 	}
 }

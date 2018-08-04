@@ -18,62 +18,83 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
                 public static Properties OR;
                
                 
+                public static void excelfile(String path, String sheetname) throws IOException
+                {
+                	FileInputStream fi=new FileInputStream(path);
+         		   
+         		   wb = new XSSFWorkbook(fi);
+
+     			   s = wb.getSheet(sheetname);
+                	
+                }
                 
-           public static Object[][] setExcelFile(String Filepath, String SheetName)throws Exception
-           {
-        	   String totalrowandcol[][]=null; 
-        	   try {
-        		   FileInputStream fi=new FileInputStream(Filepath);
-        		   
-        		   wb = new XSSFWorkbook(fi);
-
-    			   s = wb.getSheet(SheetName);
-    			   
-    			   int startrow=1;
-    			   int startcol=1;  			   
-    			   
-    			   int totalrows=s.getLastRowNum();
-    			  int totalcol=2;
-    			   //int totalcol=s.getRow(2).getLastCellNum();
-    			   
-    			   totalrowandcol=new String[totalrows][totalcol];
-    			   
-    			   int ri=0;
-    			   for(int i=startrow; i<=totalrows; i++, ri++)
-    			   {
-    				   int cj=0;
-    				   
-    				   for(int j=startcol; j<=totalcol; j++, cj++)
-    				   {
-    					   totalrowandcol[ri][cj]= getCelldata(i,j);
-    					   
-    					   System.out.print(totalrowandcol[ri][cj]);
-    					   
-    					  /*if(ExcelUtils.getCelldata(i, j).equalsIgnoreCase(sTestCasesName))
-    						{
-    							break;
-    						}*/
-    				   }
-    				   System.out.println();
-    			   }
-        	   }catch(FileNotFoundException e) {
-        		   System.out.println("Could not read the Excel sheet");
-
-   				e.printStackTrace();
-        	   }
-        	   catch (IOException e){
-
-   				System.out.println("Could not read the Excel sheet");
-
-   				e.printStackTrace();
-
-   				}
-
-   			return(totalrowandcol);
-
-   			}
-
-		public static String getCelldata(int RowNum, int ColNum) throws Exception
+                public static int gettestcasename(String testcasename)
+                {
+                	int i;
+                	int totalrows=s.getLastRowNum();
+                	System.out.println(totalrows);
+                	for (i = 0; i < totalrows; i++) 
+                	{
+                		String cellvalue=s.getRow(i).getCell(0).getStringCellValue();
+                		if (cellvalue.equalsIgnoreCase(testcasename)) 
+                		{
+                			break;
+							
+						}
+					}
+					return i;
+					
+                	
+                }
+    
+    
+    public static String[][] setExcelFile(String path, String sheetname, int testcaserownum)
+    {
+    	
+    	String datasets[][]=null;
+    	try {
+    		
+    		FileInputStream fi=new FileInputStream(path);
+    		wb=new XSSFWorkbook(fi);
+    		s=wb.getSheet(sheetname);
+    		
+    		int totalrows=1;
+    		int totalcolums=s.getRow(testcaserownum).getLastCellNum()-1;
+    		System.out.println(totalcolums);
+    		
+    		datasets=new String[totalrows][totalcolums];
+    		int ci=0,cj=0;
+    		
+    		for (int j = 1; j <= totalcolums; j++, cj++) 
+    		{
+    			datasets[ci][cj]=s.getRow(testcaserownum).getCell(j).getStringCellValue();
+    			System.out.println(datasets[ci][cj]);
+			}
+    		
+    		
+    		
+    	}catch(FileNotFoundException e)
+    	{
+    		System.out.println("Could not read the excel sheet");
+    		e.printStackTrace();
+    		
+    	}catch(IOException e)
+    	{
+    		System.out.println("could not read the excel sheet");
+    		e.printStackTrace();
+    	
+		
+    	}
+		return datasets;
+    	
+    	
+    }
+    
+    
+    }
+                
+          
+		/*public static String getCelldata(int RowNum, int ColNum) throws Exception
 		{
 			try {
 				
@@ -95,21 +116,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 				}
 			}
 		
-		public static String getTestCaseName(String sTestCase)throws Exception{
-		String value = sTestCase;
-		try{
-			int posi = value.indexOf("@");
-			value = value.substring(0, posi);
 			
-			posi = value.lastIndexOf(".");	
-			value = value.substring(posi + 1);
-			
-			return value;
-				}catch (Exception e){throw (e);
-					}
-			}
-			
-		}
+		}*/
     
     
    /* public static int getRowContains(String sTestCasesName, int colNum) throws Exception

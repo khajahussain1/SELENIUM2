@@ -6,6 +6,8 @@
       <class name="practiceTestCases.DataProviderWithExcel_001">
         <methods>
           <include name="Registration_data"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- practiceTestCases.DataProviderWithExcel_001 -->
     </classes>
