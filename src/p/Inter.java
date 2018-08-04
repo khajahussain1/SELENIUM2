@@ -1,38 +1,24 @@
 package p;
 
-interface khaja
-{
-	void ram();
-}
-
-interface hussain
-{
-	void ram();
-}
-
-interface poola extends khaja, hussain
-{
-	void sam();
-}
+import java.util.HashMap;
+import java.util.Map;
 
 public class Inter {
 	
-	public void ram()
+		@SuppressWarnings("rawtypes")
+		public static void main(String[] args) 
 	{
-		System.out.println("ram");
-	}
-	
-	public void sam()
-	{
-		System.out.println("sam");
-	}
-
-	public static void main(String[] args) 
-	{
-		Inter in=new Inter();
-		in.ram();
-		in.sam();
-
+		Map<Integer,String> map=new HashMap<Integer,String>();
+		map.put(101, "khaja");
+		map.put(102, "Hussain");
+		map.put(103, "Hussain");
+		map.put(101, "Khaja");
+		
+		for (Map.Entry m:map.entrySet()) 
+		{
+			System.out.println(m.getKey()+" "+m.getValue());
+			
+		}
 	}
 
 }
