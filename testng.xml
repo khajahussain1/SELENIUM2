@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suite">
+
+<test name = "tests">
+
+<parameter name= "username" value="hussainonline9"></parameter>
+<parameter name = "password" value="aish@1234$"></parameter>
+
+<classes>
+
+<class name = "practiceTestCases.DataProviderWithExcel_001">
+
+</class>
+</classes>
+
+
+
+</test>
+
+
+</suite>

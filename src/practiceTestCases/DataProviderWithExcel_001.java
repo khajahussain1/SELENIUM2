@@ -17,7 +17,15 @@ public class DataProviderWithExcel_001 {
 	public WebDriver driver;
 	public String testcasename;
 	public int testcaserownum;
+	public static boolean bResult=true;
 public Loginpageobjects loginpage;
+
+//@DataProvider
+public static Object[][] credentials()
+{
+	Object testdata[][] ={{"hussainonline9", "aish@1234$$"}, {"poolakhaja", "aish@1234$$$"}};
+	return (testdata);
+}
 	
 	@BeforeMethod
 	  public void beforeMethod()throws Exception 
@@ -29,21 +37,43 @@ public Loginpageobjects loginpage;
 
         driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
 
-        driver.get("http://www.gmail.com");
-        
+        driver.get("http://www.gmail.com");       
         
 	  }
 	
-  @Test(priority=0,dataProvider = "Authontication")
-  public void Registration_data(String sUserName, String sPassword)throws  Exception
+	@DataProvider
+	public static Object[][] credentials1()
+	{
+		Object testdata[][]= {{"hussainonline9", "aish@1234$$"}};
+		return testdata;
+	}
+	
+  @Test(dataProvider="credentials1")
+  //@Parameters({"username", "password"})
+  public void Registration_data(String username, String password)throws  Exception
   {
+	  try {
 	  loginpage=new Loginpageobjects(driver);
-	  loginpage.setusername(sUserName);
+	  loginpage.setusername(username);
 	  loginpage.next_button.click();
-	  loginpage.setpassword(sPassword);
+	  loginpage.setpassword(password);
 	  loginpage.clickonsigninbutton();
 	  
-	  //System.out.println(sUserName+" "+  sPassword);
+	  if (bResult == true) {
+		  ExcelUtils.takeScreenshot(driver, testcasename);
+
+	  } else {
+			throw new Exception("Test Case Failed because of Verification");
+		}
+	  
+	  System.out.println(username+" "+  password);
+	  }catch(Exception e)
+	  {
+		  //ExcelUtils.takeScreenshot(driver, testcasename);
+		  throw e;
+	  }
+	  
+	  
 			
 	  /*driver.findElement(By.xpath("//*[@id='identifierId']")).sendKeys(sUserName);
 		System.out.println(sUserName);
@@ -58,7 +88,7 @@ public Loginpageobjects loginpage;
 
   
   }
-  @Test(priority=1, dataProvider = "Authontication")
+  //@Test(priority=1, dataProvider = "Authontication")
   public void Registration(String sUserName, String sPassword)throws  Exception
   {
 	  loginpage=new Loginpageobjects(driver);
@@ -75,7 +105,7 @@ public Loginpageobjects loginpage;
   }
 
 
-  @DataProvider
+  //@DataProvider
   public Object[][] Authontication() throws Exception
   {
 	  testcasename=this.getClass().getSimpleName();
@@ -86,9 +116,9 @@ public Loginpageobjects loginpage;
 	  testcaserownum=ExcelUtils.gettestcasename(testcasename);
 	  System.out.println(testcaserownum);
 		
-    Object test[][] =ExcelUtils.setExcelFile(System.getProperty("user.dir")+"/src/testData/TestData.xlsx","Sheet1", testcaserownum);
+    Object testdata[][] =ExcelUtils.setExcelFile(System.getProperty("user.dir")+"/src/testData/TestData.xlsx","Sheet1", testcaserownum);
 
-    return (test);
+    return testdata;
     
     
     }

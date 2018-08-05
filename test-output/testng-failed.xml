@@ -5,7 +5,7 @@
     <classes>
       <class name="practiceTestCases.DataProviderWithExcel_001">
         <methods>
-          <include name="Registration_data"/>
+          <include name="Registration_data" invocation-numbers="0"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>

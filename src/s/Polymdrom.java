@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Polymdrom {
 	
-	//@Test
+	@Test
 	public void polymdromindigit()
 	{
 		int r,sum=0,temp;
@@ -52,7 +52,7 @@ public class Polymdrom {
 		}
 	}
 	
-	@Test
+	//@Test
 	public void reverseString()
 	{
 		String s="madam";
