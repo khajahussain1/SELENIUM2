@@ -9,7 +9,7 @@ public class Loginpageobjects
 {
 	WebDriver driver;
 	
-	@FindBy(xpath="//[@id='identifierId']")
+	@FindBy(xpath="//*[@id='identifierId']")
 	public WebElement Username_txtbox;
 	
 	@FindBy(xpath="//*[@id='identifierNext']/content/span")
