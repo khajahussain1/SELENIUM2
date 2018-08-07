@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55572" started-at="2018-08-07T16:13:29Z" finished-at="2018-08-07T16:14:25Z">
+  <suite name="Default suite" duration-ms="42367" started-at="2018-08-07T16:31:46Z" finished-at="2018-08-07T16:32:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55572" started-at="2018-08-07T16:13:29Z" finished-at="2018-08-07T16:14:25Z">
+    <test name="Default test" duration-ms="42367" started-at="2018-08-07T16:31:46Z" finished-at="2018-08-07T16:32:29Z">
       <class name="p.Extentsreports">
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:p.Extentsreports@e45f292]" name="beforemethod" is-config="true" duration-ms="468" started-at="2018-08-07T21:43:29Z" finished-at="2018-08-07T21:43:30Z">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:p.Extentsreports@1e397ed7]" name="beforemethod" is-config="true" duration-ms="442" started-at="2018-08-07T22:01:46Z" finished-at="2018-08-07T22:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="FAIL" signature="verifyBlogTitle()[pri:0, instance:p.Extentsreports@e45f292]" name="verifyBlogTitle" duration-ms="36301" started-at="2018-08-07T21:43:30Z" finished-at="2018-08-07T21:44:06Z">
+        <test-method status="FAIL" signature="verifyBlogTitle()[pri:0, instance:p.Extentsreports@1e397ed7]" name="verifyBlogTitle" duration-ms="34034" started-at="2018-08-07T22:01:47Z" finished-at="2018-08-07T22:02:21Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +22,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at p.Extentsreports.verifyBlogTitle(Extentsreports.java:57)
+	at p.Extentsreports.verifyBlogTitle(Extentsreports.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -53,11 +53,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlogTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:p.Extentsreports@e45f292]" name="tearDown" is-config="true" duration-ms="18768" started-at="2018-08-07T21:44:06Z" finished-at="2018-08-07T21:44:25Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:p.Extentsreports@1e397ed7]" name="tearDown" is-config="true" duration-ms="7852" started-at="2018-08-07T22:02:21Z" finished-at="2018-08-07T22:02:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyBlogTitle status=FAILURE method=Extentsreports.verifyBlogTitle()[pri:0, instance:p.Extentsreports@e45f292] output={null}]]]>
+                <![CDATA[[TestResult name=verifyBlogTitle status=FAILURE method=Extentsreports.verifyBlogTitle()[pri:0, instance:p.Extentsreports@1e397ed7] output={null}]]]>
               </value>
             </param>
           </params>

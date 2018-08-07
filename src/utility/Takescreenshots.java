@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Takescreenshots 
 {
-	public static String getScreenshot(WebDriver driver,String name)
+	/*public static String getScreenshot(WebDriver driver,String name)
 	{
 		Calendar calendar = Calendar.getInstance();
 	SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
@@ -36,7 +36,7 @@ public class Takescreenshots
 		}
 		
 		return path;
-	}
+	}*/
 
 	
 
