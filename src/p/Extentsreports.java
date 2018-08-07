@@ -1,5 +1,8 @@
 package p;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -20,11 +23,18 @@ public class Extentsreports {
 	ExtentTest logger; 
 	WebDriver driver;
 	 
-	 
+	static {
+//		Calendar calendar = Calendar.getInstance();
+//		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+//		extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/hybridFramework/report/test" + formater.format(calendar.getTime()) + ".html", false);
+	}
+	
 	@BeforeMethod
 	public void beforemethod()
 	{
-		report=new ExtentReports("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\extentreports\\Extentreport.html");
+		Calendar calendar = Calendar.getInstance();
+		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+		report=new ExtentReports(System.getProperty("user.dir") + "/src/extentreports/Extentreport_" + formater.format(calendar.getTime()) + ".html", false);
 		 
 		logger=report.startTest("VerifyBlogTitle");
 	}
