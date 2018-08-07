@@ -36,7 +36,7 @@ public class Extentsreports {
 	@BeforeMethod
 	public void beforemethod() {
 		report = new ExtentReports(System.getProperty("user.dir") + "/src/extentreports/Extentreport_"
-				+ formater.format(calendar.getTime()) + ".html", false);
+				+ formater.format(calendar.getTime()) + ".html");
 
 		logger = report.startTest("VerifyBlogTitle");
 	}
