@@ -19,6 +19,7 @@ public class ExecciseRobot2 {
 		  Thread.sleep(2000);	
         driver.manage().window().maximize();	
         driver.get("http://spreadsheetpage.com/index.php/file/C35/P10/"); // sample url	
+        
         Robot robot = new Robot();	
         robot.mouseMove(630, 420); // move mouse point to specific location	
         robot.delay(1500);        // delay is to make code wait for mentioned milliseconds before executing next step	

@@ -17,6 +17,7 @@ public class ExcerciseRobot1 {
 		  Thread.sleep(2000);
         driver.get("http://spreadsheetpage.com/index.php/file/C35/P10/"); // sample url	
         driver.findElement(By.xpath(".//a[@href=contains(text(),'yearly-calendar.xls')]")).click();	
+        
         Robot robot = new Robot();  // Robot class throws AWT Exception	
         Thread.sleep(2000); // Thread.sleep throws InterruptedException	
         robot.keyPress(KeyEvent.VK_DOWN);  // press arrow down key of keyboard to navigate and select Save radio button	

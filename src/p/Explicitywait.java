@@ -19,7 +19,7 @@ public class Explicitywait {
 
 	public static void main(String[] args) {
 		
-		//######### implicitywait
+		//######### implicitywait ####################
 		//It is aplying entair page
 		
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);

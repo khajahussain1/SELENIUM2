@@ -2,70 +2,126 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30082" started-at="2018-08-05T09:57:32Z" finished-at="2018-08-05T09:58:02Z">
+  <suite name="Default suite" duration-ms="51073" started-at="2018-08-07T15:29:44Z" finished-at="2018-08-07T15:30:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30082" started-at="2018-08-05T09:57:32Z" finished-at="2018-08-05T09:58:02Z">
-      <class name="practiceTestCases.DataProviderWithExcel_001">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@1e397ed7]" name="beforeMethod" is-config="true" duration-ms="29764" started-at="2018-08-05T15:27:32Z" finished-at="2018-08-05T15:28:02Z">
+    <test name="Default test" duration-ms="51073" started-at="2018-08-07T15:29:44Z" finished-at="2018-08-07T15:30:36Z">
+      <class name="p.Extentsreports">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:p.Extentsreports@e45f292]" name="beforemethod" is-config="true" duration-ms="463" started-at="2018-08-07T20:59:44Z" finished-at="2018-08-07T20:59:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@1e397ed7]" name="Registration_data" duration-ms="220" started-at="2018-08-05T15:28:02Z" data-provider="credentials1" finished-at="2018-08-05T15:28:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[hussainonline9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[aish@1234$$]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        </test-method> <!-- beforemethod -->
+        <test-method status="FAIL" signature="verifyBlogTitle()[pri:0, instance:p.Extentsreports@e45f292]" name="verifyBlogTitle" duration-ms="50525" started-at="2018-08-07T20:59:45Z" finished-at="2018-08-07T21:00:35Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The given selector //[@id='identifierId'] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //[@id='identifierId'] because of the following error:
-SyntaxError: The expression is not a legal expression.
-Command duration or timeout: 161 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+e changes
+1533655789978	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1533655789979	addons.xpi-utils	DEBUG	Updating add-on states
+1533655789984	addons.xpi-utils	DEBUG	Writing add-ons list
+1533655789992	addons.xpi-utils	ERROR	Failed to write add-ons list to profile directory: [Exception... "Component returned failure code: 0x8052000e (NS_ERROR_FILE_IS_LOCKED) [nsIFile.moveTo]"  nsresult: "0x8052000e (NS_ERROR_FILE_IS_LOCKED)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js :: XPIDB_writeAddonsList :: line 1485"  data: no] Stack trace: XPIDB_writeAddonsList()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1485 < XPI_checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3386 < XPI_startup()@resource://gre/modules/addons/XPIProvider.jsm:2518 < callProvider()@resource://gre/modules/AddonManager.jsm:221 < _startProvider()@resource://gre/modules/AddonManager.jsm:828 < AMI_startup()@resource://gre/modules/AddonManager.jsm:999 < AMP_startup()@resource://gre/modules/AddonManager.jsm:2673 < AMC_observe()@resource://gre/components/addonManager.js:58 < <file:unknown>
+1533655790009	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1533655790010	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1533655790010	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1533655790010	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1533655790010	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1533655790011	addons.manager	DEBUG	Starting provider: GMPProvider
+1533655790027	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1533655790027	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1533655790027	addons.manager	DEBUG	Starting provider: PluginProvider
+1533655790028	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1533655790028	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1533655790029	addons.manager	DEBUG	Completed startup sequence
+1533655791210	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1533655791210	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1533655791211	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1533655792110	DeferredSave.extensions.json	DEBUG	Starting write
+1533655793368	addons.repository	DEBUG	No addons.json found.
+1533655793369	DeferredSave.addons.json	DEBUG	Save changes
+1533655793375	DeferredSave.addons.json	DEBUG	Starting timer
+1533655793395	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1533655793395	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1533655793403	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1533655794083	DeferredSave.extensions.json	DEBUG	Write succeeded
+1533655794083	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1533655794096	DeferredSave.addons.json	DEBUG	Starting write
+1533655794607	DeferredSave.addons.json	DEBUG	Write succeeded
+1533655806636	addons.manager	DEBUG	shutdown
+1533655806637	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1533655806637	addons.xpi	DEBUG	shutdown
+1533655806638	addons.xpi-utils	DEBUG	Updating add-on states
+1533655806641	addons.xpi-utils	DEBUG	Writing add-ons list
+1533655806649	addons.xpi-utils	DEBUG	shutdown
+1533655806650	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1533655806651	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1533655806653	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1533655806654	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1533655806657	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1533655806662	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1533655806668	addons.manager	DEBUG	Async provider shutdown done
+
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.43.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e3bfdf9-9239-4f05-8401-98f876ede82a
-*** Element info: {Using=xpath, value=//[@id='identifierId']}]]>
+System info: host: 'DESKTOP-T7322OL', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //[@id='identifierId'] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //[@id='identifierId'] because of the following error:
-SyntaxError: The expression is not a legal expression.
-Command duration or timeout: 161 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+e changes
+1533655789978	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1533655789979	addons.xpi-utils	DEBUG	Updating add-on states
+1533655789984	addons.xpi-utils	DEBUG	Writing add-ons list
+1533655789992	addons.xpi-utils	ERROR	Failed to write add-ons list to profile directory: [Exception... "Component returned failure code: 0x8052000e (NS_ERROR_FILE_IS_LOCKED) [nsIFile.moveTo]"  nsresult: "0x8052000e (NS_ERROR_FILE_IS_LOCKED)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js :: XPIDB_writeAddonsList :: line 1485"  data: no] Stack trace: XPIDB_writeAddonsList()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1485 < XPI_checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3386 < XPI_startup()@resource://gre/modules/addons/XPIProvider.jsm:2518 < callProvider()@resource://gre/modules/AddonManager.jsm:221 < _startProvider()@resource://gre/modules/AddonManager.jsm:828 < AMI_startup()@resource://gre/modules/AddonManager.jsm:999 < AMP_startup()@resource://gre/modules/AddonManager.jsm:2673 < AMC_observe()@resource://gre/components/addonManager.js:58 < <file:unknown>
+1533655790009	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1533655790010	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1533655790010	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1533655790010	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1533655790010	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1533655790011	addons.manager	DEBUG	Starting provider: GMPProvider
+1533655790027	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1533655790027	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1533655790027	addons.manager	DEBUG	Starting provider: PluginProvider
+1533655790028	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1533655790028	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1533655790029	addons.manager	DEBUG	Completed startup sequence
+1533655791210	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1533655791210	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1533655791211	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1533655792110	DeferredSave.extensions.json	DEBUG	Starting write
+1533655793368	addons.repository	DEBUG	No addons.json found.
+1533655793369	DeferredSave.addons.json	DEBUG	Save changes
+1533655793375	DeferredSave.addons.json	DEBUG	Starting timer
+1533655793395	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1533655793395	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1533655793403	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1533655794083	DeferredSave.extensions.json	DEBUG	Write succeeded
+1533655794083	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1533655794096	DeferredSave.addons.json	DEBUG	Starting write
+1533655794607	DeferredSave.addons.json	DEBUG	Write succeeded
+1533655806636	addons.manager	DEBUG	shutdown
+1533655806637	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1533655806637	addons.xpi	DEBUG	shutdown
+1533655806638	addons.xpi-utils	DEBUG	Updating add-on states
+1533655806641	addons.xpi-utils	DEBUG	Writing add-ons list
+1533655806649	addons.xpi-utils	DEBUG	shutdown
+1533655806650	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1533655806651	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1533655806653	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1533655806654	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1533655806657	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1533655806662	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1533655806668	addons.manager	DEBUG	Async provider shutdown done
+
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.43.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e3bfdf9-9239-4f05-8401-98f876ede82a
-*** Element info: {Using=xpath, value=//[@id='identifierId']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-	at practiceTestCases.Loginpageobjects.setusername(Loginpageobjects.java:33)
-	at practiceTestCases.DataProviderWithExcel_001.Registration_data(DataProviderWithExcel_001.java:57)
+System info: host: 'DESKTOP-T7322OL', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at p.Extentsreports.verifyBlogTitle(Extentsreports.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -90,30 +146,106 @@ Session ID: 1e3bfdf9-9239-4f05-8401-98f876ede82a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //[@id='identifierId'] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //[@id='identifierId'] because of the following error:
-SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.43.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/Hussain/AppData/Local/Temp/anonymous7928133451782923525webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10744)
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Hussain/AppData/Local/Temp/anonymous7928133451782923525webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10775)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/Hussain/AppData/Local/Temp/anonymous7928133451782923525webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Hussain/AppData/Local/Temp/anonymous7928133451782923525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Hussain/AppData/Local/Temp/anonymous7928133451782923525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/Hussain/AppData/Local/Temp/anonymous7928133451782923525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+e changes
+1533655789978	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1533655789979	addons.xpi-utils	DEBUG	Updating add-on states
+1533655789984	addons.xpi-utils	DEBUG	Writing add-ons list
+1533655789992	addons.xpi-utils	ERROR	Failed to write add-ons list to profile directory: [Exception... "Component returned failure code: 0x8052000e (NS_ERROR_FILE_IS_LOCKED) [nsIFile.moveTo]"  nsresult: "0x8052000e (NS_ERROR_FILE_IS_LOCKED)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js :: XPIDB_writeAddonsList :: line 1485"  data: no] Stack trace: XPIDB_writeAddonsList()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1485 < XPI_checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3386 < XPI_startup()@resource://gre/modules/addons/XPIProvider.jsm:2518 < callProvider()@resource://gre/modules/AddonManager.jsm:221 < _startProvider()@resource://gre/modules/AddonManager.jsm:828 < AMI_startup()@resource://gre/modules/AddonManager.jsm:999 < AMP_startup()@resource://gre/modules/AddonManager.jsm:2673 < AMC_observe()@resource://gre/components/addonManager.js:58 < <file:unknown>
+1533655790009	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1533655790010	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1533655790010	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1533655790010	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1533655790010	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1533655790011	addons.manager	DEBUG	Starting provider: GMPProvider
+1533655790027	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1533655790027	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1533655790027	addons.manager	DEBUG	Starting provider: PluginProvider
+1533655790028	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1533655790028	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1533655790029	addons.manager	DEBUG	Completed startup sequence
+1533655791210	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1533655791210	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1533655791211	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1533655792110	DeferredSave.extensions.json	DEBUG	Starting write
+1533655793368	addons.repository	DEBUG	No addons.json found.
+1533655793369	DeferredSave.addons.json	DEBUG	Save changes
+1533655793375	DeferredSave.addons.json	DEBUG	Starting timer
+1533655793395	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1533655793395	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1533655793403	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1533655794083	DeferredSave.extensions.json	DEBUG	Write succeeded
+1533655794083	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1533655794096	DeferredSave.addons.json	DEBUG	Starting write
+1533655794607	DeferredSave.addons.json	DEBUG	Write succeeded
+1533655806636	addons.manager	DEBUG	shutdown
+1533655806637	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1533655806637	addons.xpi	DEBUG	shutdown
+1533655806638	addons.xpi-utils	DEBUG	Updating add-on states
+1533655806641	addons.xpi-utils	DEBUG	Writing add-ons list
+1533655806649	addons.xpi-utils	DEBUG	shutdown
+1533655806650	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1533655806651	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1533655806653	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1533655806654	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1533655806657	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1533655806662	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1533655806668	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Registration_data -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@1e397ed7]" name="afterMethod" is-config="true" duration-ms="2" started-at="2018-08-05T15:28:02Z" finished-at="2018-08-05T15:28:02Z">
+        </test-method> <!-- verifyBlogTitle -->
+        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:p.Extentsreports@e45f292]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-08-07T21:00:35Z" finished-at="2018-08-07T21:00:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBlogTitle status=FAILURE method=Extentsreports.verifyBlogTitle()[pri:0, instance:p.Extentsreports@e45f292] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at utility.Takescreenshots.getScreenshot(Takescreenshots.java:17)
+	at p.Extentsreports.tearDown(Extentsreports.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- practiceTestCases.DataProviderWithExcel_001 -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- p.Extentsreports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

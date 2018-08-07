@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practiceTestCases.DataProviderWithExcel_001">
+      <class name="p.Extentsreports">
         <methods>
-          <include name="Registration_data" invocation-numbers="0"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="verifyBlogTitle"/>
+          <include name="beforemethod"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- practiceTestCases.DataProviderWithExcel_001 -->
+      </class> <!-- p.Extentsreports -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
