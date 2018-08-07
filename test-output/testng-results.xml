@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44118" started-at="2018-08-07T16:45:51Z" finished-at="2018-08-07T16:46:35Z">
+  <suite name="Default suite" duration-ms="48454" started-at="2018-08-07T16:54:44Z" finished-at="2018-08-07T16:55:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44118" started-at="2018-08-07T16:45:51Z" finished-at="2018-08-07T16:46:35Z">
+    <test name="Default test" duration-ms="48454" started-at="2018-08-07T16:54:44Z" finished-at="2018-08-07T16:55:32Z">
       <class name="p.Extentsreports">
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:p.Extentsreports@1e397ed7]" name="beforemethod" is-config="true" duration-ms="827" started-at="2018-08-07T22:15:51Z" finished-at="2018-08-07T22:15:52Z">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:p.Extentsreports@1e397ed7]" name="beforemethod" is-config="true" duration-ms="680" started-at="2018-08-07T22:24:44Z" finished-at="2018-08-07T22:24:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="FAIL" signature="verifyBlogTitle()[pri:0, instance:p.Extentsreports@1e397ed7]" name="verifyBlogTitle" duration-ms="36240" started-at="2018-08-07T22:15:52Z" finished-at="2018-08-07T22:16:28Z">
+        <test-method status="FAIL" signature="verifyBlogTitle()[pri:0, instance:p.Extentsreports@1e397ed7]" name="verifyBlogTitle" duration-ms="39104" started-at="2018-08-07T22:24:44Z" finished-at="2018-08-07T22:25:24Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlogTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:p.Extentsreports@1e397ed7]" name="tearDown" is-config="true" duration-ms="7008" started-at="2018-08-07T22:16:28Z" finished-at="2018-08-07T22:16:35Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:p.Extentsreports@1e397ed7]" name="tearDown" is-config="true" duration-ms="8596" started-at="2018-08-07T22:25:24Z" finished-at="2018-08-07T22:25:32Z">
           <params>
             <param index="0">
               <value>
