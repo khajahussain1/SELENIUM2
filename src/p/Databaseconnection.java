@@ -14,7 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -25,20 +25,20 @@ public class Databaseconnection
 	 private WebDriver driver;
 	 private Connection con = null;
 	 private Statement stmt = null;
-	 String dataBaseName = "student";
-	 String driver_DBPath = "jdbc:mysql://localhost:3306/";
-	 String DB_username = "root";
-	 String DB_password = "root";
+	 String dataBaseName = "emp";
+	 String driver_DBPath = "jdbc:oracle:thin:@localhost:1521:xe";
+	 String DB_username = "khaja";
+	 String DB_password = "khaja";
 	 String Query;
-	 ResultSet res;
+	 ResultSet rs;
 	 
 	 @BeforeTest
 	 public void DBConnection() throws Exception
 	 {
 	  try{
-	   Class.forName("com.mysql.jdbc.Driver").newInstance(); //For MySQL
+	   Class.forName("oracle.jdbc.driver.OracleDriver"); //For SQL
 	      Connection con = DriverManager.getConnection(
-	   driver_DBPath + dataBaseName ,DB_username,DB_password );
+	   driver_DBPath, DB_username,DB_password );
 	      stmt = con.createStatement();
 	  }catch(Exception e){System.out.println(e.getMessage());}
 	 }
@@ -47,31 +47,35 @@ public class Databaseconnection
 	 public void tc_1() throws Exception
 	 {
 	  try{
-	  Query = "Select * from stdetails";
-	  res = stmt.executeQuery(Query);
+	  Query = "Select * from emp";
+	  rs = stmt.executeQuery(Query);
 	  
-	     driver = new FirefoxDriver();
+	  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/lib/chromedriver.exe");
+	     driver = new ChromeDriver();
 	     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	     driver.manage().window().maximize();
 	     driver.get("http://www.qavalidation.com/demo");
 	     
 	     int i=1; //to name the screenshot file
-	     while(res.next()) //move to the next row in result set, row by row
+	     while(rs.next()) //move to the next row in result set, row by row
 	     {
-	      String FullName = res.getString("FullName");
-	      String Email = res.getString("Email");
-	      int Telephone = res.getInt("Telephone");
-	      String Gender = res.getString("Gender");
+	      String FullName = rs.getString("ename");
+//	      String Email = rs.getString("Email");
+//	      int Telephone = rs.getInt("Telephone");
+//	      String Gender = rs.getString("Gender");
 	      
 	      WebElement Name = driver.findElement(By.id("username"));
-	       Name.clear();Name.sendKeys(FullName);
+	       Name.clear();
+	       Name.sendKeys(FullName);
 	      WebElement EmailAdd = driver.findElement(By.id("email"));
-	              EmailAdd.clear();EmailAdd.sendKeys(Email);
+	              EmailAdd.clear();
+	             // EmailAdd.sendKeys(Email);
 	      WebElement CellPh = driver.findElement(By.id("tel"));
-	       CellPh.clear();CellPh.sendKeys(Integer.toString(Telephone));
+	       CellPh.clear();
+	      // CellPh.sendKeys(Integer.toString(Telephone));
 	 
 	      Select sel = new Select(driver.findElement(By.name("sgender")));
-	      sel.selectByValue(Gender);
+	      //sel.selectByValue(Gender);
 	      
 	      i++;
 	      GetScreenShot(i);

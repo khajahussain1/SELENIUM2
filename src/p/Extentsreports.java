@@ -27,16 +27,18 @@ public class Extentsreports {
 	WebDriver driver;
 	Calendar calendar;
 	SimpleDateFormat formater;
+	String time;
 
 	public Extentsreports() {
 		calendar = Calendar.getInstance();
 		formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+		time=formater.format(calendar.getTime());
 	}
 
 	@BeforeMethod
 	public void beforemethod() {
 		report = new ExtentReports(System.getProperty("user.dir") + "/src/extentreports/Extentreport_"
-				+ formater.format(calendar.getTime()) + ".html");
+				+ time+ ".html");
 
 		logger = report.startTest("VerifyBlogTitle");
 	}
@@ -81,7 +83,7 @@ public class Extentsreports {
 		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 		String path = System.getProperty("user.dir") + "/src/screenshot/" + name + "_"
-				+ formater.format(calendar.getTime()) + ".png";
+				+ time + ".png";
 
 		File destination = new File(path);
 
