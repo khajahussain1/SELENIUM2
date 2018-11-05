@@ -7,23 +7,30 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowHandles {
 	public static WebDriver driver;
 
 	public static void main(String[] args) {
-
-		driver=new FirefoxDriver();
+		
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/lib/chromedriver.exe");
+		driver=new ChromeDriver();
+		driver=new ChromeDriver();
+		driver=new ChromeDriver();
+		driver.get("http://gmail.com");
 		Set<String> windowid = driver.getWindowHandles();
+		
 		Iterator<String> itr = windowid.iterator();
+		
 		ArrayList<String> ids=new ArrayList<String>();
+		
 		while(itr.hasNext())
 		{
 			ids.add(itr.next());
 		}
 		//go to 3rd window
-		driver.switchTo().window(ids.get(3));
+		driver.switchTo().window(ids.get(0));
 		//perform some actions on 3rd window and close.
 		
 		driver.findElement(By.xpath(""));
