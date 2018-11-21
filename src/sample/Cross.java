@@ -23,19 +23,27 @@ public class Cross {
   @BeforeTest
   public void beforeTest(String browser) throws Exception 
   {
-	  OR= new ReadORFile("C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\src\\utility\\OR");
+	  OR= new ReadORFile(System.getProperty("user.dir")+"/src/utility/OR");
 	  if(browser.equalsIgnoreCase("chrome"))
 	  {
 		 
-		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/lib/chromedriver2.exe");
 		  driver=new ChromeDriver();
 		  driver.manage().window().maximize();
-		  driver.get("http://spicejet.com/");
+		  String url = System.getProperty("url");
+		  String username = System.getProperty("username");
+		  System.out.println("url-----"+url);
+		  System.out.println("username------"+username);
+		  
+		  String environment = System.getProperty("environment");
+		  System.out.println("environment------"+environment);
+		  
+		  driver.get(url);
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		  
 	  }else if(browser.equalsIgnoreCase("gecko"))
 	  {
-		  System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/lib/geckodriver2.exe");
 		  driver=new FirefoxDriver();
 		  driver.manage().window().maximize();
 		  driver.get("http://www.gmail.com");
@@ -44,7 +52,7 @@ public class Cross {
 	  }
 	  else if(browser.equalsIgnoreCase("ie"))
 	  {
-		  System.setProperty("webdriver.ie.driver", "C:\\Users\\Hussain\\Desktop\\Git _Local _Repo\\SELENIUM2\\lib\\IEDriverServer.exe");
+		  System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/lib/IEDriverServer.exe");
 		  InternetExplorerDriver  driver = new InternetExplorerDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20000, TimeUnit.SECONDS);

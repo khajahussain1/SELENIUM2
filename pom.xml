@@ -32,7 +32,8 @@
 					<configuration>
 						<systemPropertVariables>
 							<url>${Durl}</url>
-							<url>${Dusername}</url>
+							<username>${Dusername}</username>
+							<environment>${environment}</environment>
 						</systemPropertVariables>
 					</configuration>
 
