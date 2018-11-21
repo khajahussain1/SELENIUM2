@@ -33,6 +33,7 @@ public class Asserts {
 	      Assert.assertTrue(myAccount.isDisplayed());
 	 
 	      //My Account will be clicked only if the above condition is true
+	    
 	 
 	      myAccount.click();
 	}
