@@ -39,8 +39,8 @@
 
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<!-- <suiteXmlFile>Multiple.xml</suiteXmlFile> -->
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>Multiple.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 
 
 					</suiteXmlFiles>
