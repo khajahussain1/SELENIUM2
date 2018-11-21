@@ -137,7 +137,7 @@ public class Alertframeswindowhandles {
 		driver.findElements(By.xpath("")).get(5);
 		
 		// how to know check boxes are selected or not
-		driver.findElement(By.xpath("checkboe")).isSelected();
+		driver.findElement(By.xpath("checkbox")).isSelected();
 		
 		//how to check that is element is displayed or not in the UI
 		

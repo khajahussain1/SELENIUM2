@@ -30,7 +30,7 @@ public class WindowHandles {
 			ids.add(itr.next());
 		}
 		//go to 3rd window
-		driver.switchTo().window(ids.get(0));
+		driver.switchTo().window(ids.get(1));
 		//perform some actions on 3rd window and close.
 		
 		driver.findElement(By.xpath(""));

@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="p.Extentsreports">
+      <class name="p.Frameshandles">
         <methods>
-          <include name="verifyBlogTitle"/>
-          <include name="beforemethod"/>
-          <include name="tearDown"/>
+          <include name="allframeshandles"/>
         </methods>
-      </class> <!-- p.Extentsreports -->
+      </class> <!-- p.Frameshandles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

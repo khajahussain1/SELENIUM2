@@ -7,14 +7,14 @@ public class Stringsplit {
 		String str= "khajahussain";
 		String s[]=str.split("");
 		System.out.println(s.length);
-		for(String a:s)
+//		for(String a:s)
+//		{
+//			System.out.println(a);
+//		}
+		for(int i=s.length-1; i>=0; i--)
 		{
-			System.out.println(a);
+			System.out.print(s[i]+" ");
 		}
-		/*for(int i=0; i<str.length(); i++)
-		{
-			System.out.println(s[i]);
-		}
-*/	}
+	}
 
 }

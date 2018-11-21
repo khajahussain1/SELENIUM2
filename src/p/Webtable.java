@@ -24,7 +24,7 @@ public class Webtable {
 	//@Test
   public void Noofrowsandcols () {
 		
-		  System.setProperty("webdriver.chrome.driver","F:\\\\Workspace_Seetest\\\\SELENIUM1\\\\lib\\\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/lib/chromedriver.exe");
 		  driver= new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.get("http://money.rediff.com/gainers/bsc/dailygroupa?"); 
@@ -42,11 +42,11 @@ public class Webtable {
 	        
 	     }
 	
-	//@Test
+	@Test
 	public void RowandCell ()
 	{
 		
-		System.setProperty("webdriver.chrome.driver","F:\\\\Workspace_Seetest\\\\SELENIUM1\\\\lib\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/lib/chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://money.rediff.com/gainers/bsc/daily/groupa?"); 
@@ -67,7 +67,7 @@ public class Webtable {
 		    
     }
 	
-	@Test
+	//@Test
 	public void MaxFromTable () throws ParseException
 	{
 		System.setProperty("webdriver.chrome.driver","F:\\Workspace_Seetest\\SELENIUM1\\lib\\chromedriver.exe");
@@ -115,8 +115,8 @@ public class Webtable {
 	//@Test
 	public void getparticularrowvalue()
 	{
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.setProperty("webdriver.chrome.driver","F:\\Workspace_Seetest\\SELENIUM1\\lib\\chromedriver.exe");
+		  driver= new ChromeDriver();driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://toolsqa.wpengine.com/automation-practice-table");
 		
 		String s="Taipei 101";

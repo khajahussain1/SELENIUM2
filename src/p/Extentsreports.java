@@ -23,7 +23,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class Extentsreports {
 
 	ExtentReports report;
-	ExtentTest logger;
+	ExtentTest test;
 	WebDriver driver;
 	Calendar calendar;
 	SimpleDateFormat formater;
@@ -40,7 +40,7 @@ public class Extentsreports {
 		report = new ExtentReports(System.getProperty("user.dir") + "/src/extentreports/Extentreport_"
 				+ time+ ".html");
 
-		logger = report.startTest("VerifyBlogTitle");
+		test = report.startTest("VerifyBlogTitle");
 	}
 
 	@Test
@@ -49,16 +49,16 @@ public class Extentsreports {
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/lib/geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		logger.log(LogStatus.INFO, "Browser started ");
+		test.log(LogStatus.INFO, "Browser started ");
 		driver.get("http://www.learn-automation.com");
 
-		logger.log(LogStatus.INFO, "Application is up and running");
+		test.log(LogStatus.INFO, "Application is up and running");
 
 		String title = driver.getTitle();
 
 		Assert.assertTrue(title.contains("Google"));
 
-		logger.log(LogStatus.PASS, "Title verified");
+		test.log(LogStatus.PASS, "Title verified");
 	}
 
 	@AfterMethod
@@ -66,12 +66,12 @@ public class Extentsreports {
 		if (result.getStatus() == ITestResult.FAILURE) {
 
 			String screenshot_path = getScreenshot(result.getName());
-			String image = logger.addScreenCapture(screenshot_path);
-			logger.log(LogStatus.FAIL, "Title verification", image);
+			String image = test.addScreenCapture(screenshot_path);
+			test.log(LogStatus.FAIL, "Title verification", image);
 
 		}
 
-		report.endTest(logger);
+		report.endTest(test);
 		report.flush();
 
 		// driver.get("C:\\Report\\LearnAutomation.html");
