@@ -28,12 +28,20 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
+
+					<configuration>
+						<systemPropertVariables>
+							<url>${Durl}</url>
+							<url>${Dusername}</url>
+						</systemPropertVariables>
+					</configuration>
+
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
 						<!-- <suiteXmlFile>Multiple.xml</suiteXmlFile> -->
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-						
-						
+
+
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

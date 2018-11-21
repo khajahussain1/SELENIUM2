@@ -1,131 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="0" failed="2" skipped="1">
+<testng-results total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[About to begin executing Suite Suite]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test IETest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test FirefoxTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test Chore tests]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Suite Suite]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test IETest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test FirefoxTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test Chore tests]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Suite Suite]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test IETest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test FirefoxTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing Test Chore tests]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : Cross.beforeTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.spicejet]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : Cross.spicejet]]>
-    </line>
-    <line>
-      <![CDATA[Test Method resides in sample.Cross]]>
-    </line>
-    <line>
-      <![CDATA[Test Status: Failed]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.afterTest]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : Cross.afterTest]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.spicejet]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : Cross.spicejet]]>
-    </line>
-    <line>
-      <![CDATA[Test Method resides in sample.Cross]]>
-    </line>
-    <line>
-      <![CDATA[Test Status: Failed]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : Cross.afterTest]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : Cross.afterTest]]>
-    </line>
   </reporter-output>
-  <suite started-at="2018-11-21T02:23:50Z" name="Suite" finished-at="2018-11-21T02:25:16Z" duration-ms="86091">
+  <suite started-at="2018-11-21T06:06:07Z" name="suite" finished-at="2018-11-21T06:06:58Z" duration-ms="51133">
     <groups>
     </groups>
-    <test started-at="2018-11-21T02:23:50Z" name="FirefoxTest" finished-at="2018-11-21T02:24:56Z" duration-ms="66144">
-      <class name="sample.Cross">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:sample.Cross@7e9131d5]" started-at="2018-11-21T07:53:50Z" name="beforeTest" finished-at="2018-11-21T07:53:50Z" duration-ms="0" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[gecko]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2018-11-21T06:06:07Z" name="tests" finished-at="2018-11-21T06:06:58Z" duration-ms="51133">
+      <class name="practiceTestCases.DataProviderWithExcel_001">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3c947bc5]" started-at="2018-11-21T11:36:07Z" name="beforeMethod" finished-at="2018-11-21T11:36:07Z" duration-ms="0" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+try whose name is not a valid add-on ID: C:\Users\Hussain\AppData\Local\Temp\anonymous10966967371362657715webdriver-profile\extensions\webdriver-staging
+1542780385649	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1542780385650	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1542780385650	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1542780385651	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1542780385651	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1542780385653	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1542780385653	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1542780385654	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1542780385654	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1542780385655	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1542780385656	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1542780385657	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1542780385657	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1542780385658	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1542780385658	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1542780385659	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1542780385661	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1542780385661	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1542780385662	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1542780385702	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1542780386252	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1542780386541	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0/20170926190823/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+1542780388146	addons.productaddons	INFO	Completed downloading document
+1542780389129	addons.productaddons	INFO	downloadXHR File download. status=200
+1542780389133	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Hussain\AppData\Local\Temp\tmpaddon-ff6238
+1542780396577	addons.productaddons	INFO	downloadXHR File download. status=200
+1542780396582	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Hussain\AppData\Local\Temp\tmpaddon-b420b5
 
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
@@ -133,6 +53,41 @@ Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+try whose name is not a valid add-on ID: C:\Users\Hussain\AppData\Local\Temp\anonymous10966967371362657715webdriver-profile\extensions\webdriver-staging
+1542780385649	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1542780385650	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1542780385650	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1542780385651	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1542780385651	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1542780385653	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1542780385653	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1542780385654	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1542780385654	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1542780385655	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1542780385656	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1542780385657	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1542780385657	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1542780385658	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1542780385658	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1542780385659	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1542780385661	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1542780385661	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1542780385662	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1542780385702	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1542780386252	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1542780386541	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0/20170926190823/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+1542780388146	addons.productaddons	INFO	Completed downloading document
+1542780389129	addons.productaddons	INFO	downloadXHR File download. status=200
+1542780389133	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Hussain\AppData\Local\Temp\tmpaddon-ff6238
+1542780396577	addons.productaddons	INFO	downloadXHR File download. status=200
+1542780396582	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Hussain\AppData\Local\Temp\tmpaddon-b420b5
 
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
@@ -144,7 +99,7 @@ Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at sample.Cross.beforeTest(Cross.java:39)
+	at practiceTestCases.DataProviderWithExcel_001.beforeMethod(DataProviderWithExcel_001.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -152,203 +107,91 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.base/java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+try whose name is not a valid add-on ID: C:\Users\Hussain\AppData\Local\Temp\anonymous10966967371362657715webdriver-profile\extensions\webdriver-staging
+1542780385649	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1542780385650	addons.xpi	INFO	Mapping activity-stream@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1542780385650	addons.xpi	INFO	Mapping aushelper@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping clicktoplay-rollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\clicktoplay-rollout@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping e10srollout@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1542780385651	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1542780385651	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1542780385651	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1542780385652	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1542780385653	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1542780385653	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1542780385654	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1542780385654	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1542780385655	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1542780385656	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1542780385657	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1542780385657	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1542780385658	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1542780385658	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1542780385659	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1542780385661	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1542780385661	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1542780385662	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1542780385702	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1542780386252	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1542780386541	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0/20170926190823/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+1542780388146	addons.productaddons	INFO	Completed downloading document
+1542780389129	addons.productaddons	INFO	downloadXHR File download. status=200
+1542780389133	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Hussain\AppData\Local\Temp\tmpaddon-ff6238
+1542780396577	addons.productaddons	INFO	downloadXHR File download. status=200
+1542780396582	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\Hussain\AppData\Local\Temp\tmpaddon-b420b5
 
 	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
-	... 25 more
+	... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : Cross.beforeTest]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="gmail()[pri:0, instance:sample.Cross@7e9131d5]" started-at="2018-11-21T07:54:56Z" name="gmail" finished-at="2018-11-21T07:54:56Z" duration-ms="5" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gmail -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:sample.Cross@7e9131d5]" started-at="2018-11-21T07:54:56Z" name="afterTest" finished-at="2018-11-21T07:54:56Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- sample.Cross -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2018-11-21T02:23:50Z" name="IETest" finished-at="2018-11-21T02:24:58Z" duration-ms="68002">
-      <class name="sample.Cross">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:sample.Cross@26275bef]" started-at="2018-11-21T07:53:50Z" name="beforeTest" finished-at="2018-11-21T07:54:58Z" duration-ms="67975" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Registration_data(java.lang.String, java.lang.String)[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3c947bc5]" started-at="2018-11-21T11:36:58Z" name="Registration_data" data-provider="credentials1" finished-at="2018-11-21T11:36:58Z" duration-ms="9" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ie]]>
+                <![CDATA[hussainonline9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aish@1234$$]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : Cross.beforeTest]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="spicejet()[pri:0, instance:sample.Cross@26275bef]" started-at="2018-11-21T07:54:58Z" name="spicejet" finished-at="2018-11-21T07:54:58Z" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at sample.Cross.spicejet(Cross.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.base/java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- Registration_data -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:practiceTestCases.DataProviderWithExcel_001@3c947bc5]" started-at="2018-11-21T11:36:58Z" name="afterMethod" finished-at="2018-11-21T11:36:58Z" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : Cross.spicejet]]>
-            </line>
-            <line>
-              <![CDATA[Test Method resides in sample.Cross]]>
-            </line>
-            <line>
-              <![CDATA[Test Status: Failed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- spicejet -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:sample.Cross@26275bef]" started-at="2018-11-21T07:54:58Z" name="afterTest" finished-at="2018-11-21T07:54:58Z" duration-ms="3" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : Cross.afterTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- sample.Cross -->
-    </test> <!-- IETest -->
-    <test started-at="2018-11-21T02:23:50Z" name="Chore tests" finished-at="2018-11-21T02:25:16Z" duration-ms="86091">
-      <class name="sample.Cross">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:sample.Cross@770d3326]" started-at="2018-11-21T07:53:50Z" name="beforeTest" finished-at="2018-11-21T07:54:46Z" duration-ms="55532" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : Cross.beforeTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="spicejet()[pri:0, instance:sample.Cross@770d3326]" started-at="2018-11-21T07:54:46Z" name="spicejet" finished-at="2018-11-21T07:55:16Z" duration-ms="30493" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[3]/td[6]/a"}
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Hussain\AppData\Local\Temp\scoped_dir8932_13725}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.102, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 5da8e16f9b2ffed7dd897698de3b45f5
-*** Element info: {Using=xpath, value=//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[3]/td[6]/a}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[3]/td[6]/a"}
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\Hussain\AppData\Local\Temp\scoped_dir8932_13725}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=70.0.3538.102, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 5da8e16f9b2ffed7dd897698de3b45f5
-*** Element info: {Using=xpath, value=//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[3]/td[6]/a}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at sample.Cross.spicejet(Cross.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.base/java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : Cross.spicejet]]>
-            </line>
-            <line>
-              <![CDATA[Test Method resides in sample.Cross]]>
-            </line>
-            <line>
-              <![CDATA[Test Status: Failed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- spicejet -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:sample.Cross@770d3326]" started-at="2018-11-21T07:55:16Z" name="afterTest" finished-at="2018-11-21T07:55:16Z" duration-ms="3" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : Cross.afterTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- sample.Cross -->
-    </test> <!-- Chore tests -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- practiceTestCases.DataProviderWithExcel_001 -->
+    </test> <!-- tests -->
+  </suite> <!-- suite -->
 </testng-results>
