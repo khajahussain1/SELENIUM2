@@ -34,6 +34,7 @@ public class Asserts {
 	 
 	      //My Account will be clicked only if the above condition is true
 	    
+	      //h;hjip;hiphjpihjpjpji
 	 
 	      myAccount.click();
 	}
