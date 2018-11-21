@@ -6,6 +6,7 @@ interface A
 	void b();
 	void c();
 	void d();
+	
 }
 
 abstract class B implements A
