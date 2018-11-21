@@ -30,7 +30,7 @@ public class Cross {
 		  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/lib/chromedriver2.exe");
 		  driver=new ChromeDriver();
 		  driver.manage().window().maximize();
-		  String url = System.getProperty("url");
+		  /*String url = System.getProperty("url");
 		  String username = System.getProperty("username");
 		  System.out.println("url-----"+url);
 		  System.out.println("username------"+username);
@@ -38,7 +38,8 @@ public class Cross {
 		  String environment = System.getProperty("environment");
 		  System.out.println("environment------"+environment);
 		  
-		  driver.get(url);
+		  driver.get(url);*/
+		  driver.get("http://www.gmail.com");
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		  
 	  }else if(browser.equalsIgnoreCase("gecko"))
