@@ -12,18 +12,16 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import utility.ReadORFile;
-
 public class Cross {
 	public WebDriver driver;
 	
-	private ReadORFile OR;
+	//private ReadORFile OR;
 	
   @Parameters("browser")  
   @BeforeTest
   public void beforeTest(String browser) throws Exception 
   {
-	  OR= new ReadORFile(System.getProperty("user.dir")+"/src/utility/OR");
+	 // OR= new ReadORFile(System.getProperty("user.dir")+"/src/utility/OR");
 	  if(browser.equalsIgnoreCase("chrome"))
 	  {
 		 
@@ -81,16 +79,16 @@ public class Cross {
   }
   
   
-  @Test
+  //@Test
   public void gmail() throws Exception 
   
   {
-	  driver.findElement(OR.getLocator("USER_NAME")).sendKeys("hussainonline9");
-	  System.out.println(OR.getLocator("USER_NAME"));
-	  driver.findElement(OR.getLocator("USER_BUTTON")).click();
-	  driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-	  driver.findElement(OR.getLocator("PASSWORD")).sendKeys("aish@1234$$");
-	  driver.findElement(OR.getLocator("PASSWORD_BUTTON")).click();
+//	  driver.findElement(OR.getLocator("USER_NAME")).sendKeys("hussainonline9");
+//	  System.out.println(OR.getLocator("USER_NAME"));
+//	  driver.findElement(OR.getLocator("USER_BUTTON")).click();
+//	  driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+//	  driver.findElement(OR.getLocator("PASSWORD")).sendKeys("aish@1234$$");
+//	  driver.findElement(OR.getLocator("PASSWORD_BUTTON")).click();
   }
 	  
   @AfterTest

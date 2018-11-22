@@ -13,14 +13,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import utility.ReadORFile;
-
 public class A1 {
 	public WebDriver driver;
-	private ReadORFile OR;
+	//private ReadORFile OR;
   @Test
   public void f() throws Exception {
-	  OR= new ReadORFile("F:\\Workspace_Seetest\\SELENIUM2\\src\\utility\\OR");
+	 // OR= new ReadORFile("F:\\Workspace_Seetest\\SELENIUM2\\src\\utility\\OR");
 	 // System.setProperty("webdriver.chrome.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\chromedriver.exe");
 	  //driver=new ChromeDriver();
 	  driver=new FirefoxDriver();
