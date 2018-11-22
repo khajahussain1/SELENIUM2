@@ -10,11 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
-
 public class Handlenoofframes {
 	public WebDriver driver;
-	//@Test
+	@Test
 	public void frames() {
 		System.setProperty("webdriver.chrome.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\chromedriver.exe");
 		  driver=new ChromeDriver();
@@ -42,7 +40,7 @@ public class Handlenoofframes {
 	
 	JavascriptExecutor js=(JavascriptExecutor)driver;
 	WebElement element=driver.findElement(By.xpath("//*[@id=\"content\"]/p[5]"));
-	//js.executeScript("arguments[0].scrollIntoView()", element);
+	js.executeScript("arguments[0].scrollIntoView()", element);
 	
 	driver.switchTo().frame(0);
 	

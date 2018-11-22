@@ -10,28 +10,31 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import utility.ReadORFile;
+
 public class A1 {
 	public WebDriver driver;
-	//private ReadORFile OR;
+	private ReadORFile OR;
   @Test
   public void f() throws Exception {
-	 // OR= new ReadORFile("F:\\Workspace_Seetest\\SELENIUM2\\src\\utility\\OR");
-	 // System.setProperty("webdriver.chrome.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\chromedriver.exe");
-	  //driver=new ChromeDriver();
+	  OR= new ReadORFile("F:\\Workspace_Seetest\\SELENIUM2\\src\\utility\\OR");
+	  System.setProperty("webdriver.chrome.driver", "F:\\Workspace_Selenium\\SELENIUM\\lib\\chromedriver.exe");
+	  driver=new ChromeDriver();
 	  driver=new FirefoxDriver();
 	  driver.manage().window().maximize();
 	  //driver.get("https://www.myntra.com");
 	  driver.get("https://accounts.google.com/");
 	  driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-//	  driver.findElement(OR.getLocator("USER_NAME")).sendKeys("hussainonline9");
-//	  System.out.println(OR.getLocator("USER_NAME"));
-//	  driver.findElement(OR.getLocator("USER_BUTTON")).click();
-//	  driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-//	  driver.findElement(OR.getLocator("PASSWORD")).sendKeys("aish@1234$$");
-//	  driver.findElement(OR.getLocator("PASSWORD_BUTTON")).click();
+	  driver.findElement(OR.getLocator("USER_NAME")).sendKeys("hussainonline9");
+	  System.out.println(OR.getLocator("USER_NAME"));
+	  driver.findElement(OR.getLocator("USER_BUTTON")).click();
+	  driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+	  driver.findElement(OR.getLocator("PASSWORD")).sendKeys("aish@1234$$");
+	  driver.findElement(OR.getLocator("PASSWORD_BUTTON")).click();
 	  
 	  JavascriptExecutor jsx = (JavascriptExecutor)driver;
 	   

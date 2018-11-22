@@ -34,8 +34,46 @@ public class ReadORFile {
 		String s[] = a.split(":");
 		String locatorType = s[0];
 		String locatorValue = s[1];
+		
+		if(locatorType.equals("id"))
+		{
+			return By.id(locatorValue);
+		}
+		else if(locatorType.equals("name"))
+		{
+			return By.name(locatorValue);
+		}
+		
+		else if(locatorType.equals("tagname"))
+		{
+			return By.tagName(locatorValue);
+		}
+		else if(locatorType.equals("linktext"))
+		{
+			return By.linkText(locatorValue);
+		}
+		
+		else if(locatorType.equals("partiallinktext"))
+		{
+			return By.partialLinkText(locatorValue);
+		}
+		
+		else if(locatorType.equals("xpath"))
+		{
+			return By.xpath(locatorValue);
+		}
+		else if(locatorType.equals("css"))
+		{
+			return By.cssSelector(locatorValue);
+		}
+		
+		else if(locatorType.equals("classname"))
+		{
+			return By.className(locatorValue);
+		}
+		return null;
 
-		switch (locatorType.toUpperCase()) 
+		/*switch (locatorType.toUpperCase()) 
 		{
 		case "ID":
 			return By.id(locatorValue);
@@ -54,7 +92,7 @@ public class ReadORFile {
 		case "CLASSNAME":
 			return By.className(locatorValue);
 		default:return null;
-		}
+		}*/
 
 	}
 }

@@ -54,7 +54,6 @@ public class Iframesandalert {
 		
 		//other way of java script executor
 		JavaScriptExecutor js = ((JavaScriptExecutor)driver);
-		//js.executeScript();
 		
 		
 	}
