@@ -29,13 +29,13 @@
 				<version>2.18.1</version>
 				<configuration>
 
-					<configuration>
+					<!-- <configuration>
 						<systemPropertVariables>
 							<url>${Durl}</url>
 							<username>${Dusername}</username>
 							<environment>${environment}</environment>
 						</systemPropertVariables>
-					</configuration>
+					</configuration> -->
 
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
