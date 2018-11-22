@@ -40,7 +40,7 @@
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
 						<!-- <suiteXmlFile>Multiple.xml</suiteXmlFile> -->
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>Multiple.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 
 
