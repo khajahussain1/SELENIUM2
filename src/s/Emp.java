@@ -1,6 +1,6 @@
 package s;
 
-import p.Address;
+import Interview_Quesions.Address;
 
 public class Emp {
 	
