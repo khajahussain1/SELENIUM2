@@ -1,27 +1,33 @@
 package s;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import org.testng.annotations.Test;
+
 
 public class A2 {
 
 	@Test
 	public void f(){
 		
+		ArrayList<Object> l1=new ArrayList<Object>();
+		l1.add(true);
+		l1.add(10);
+		l1.add("khaja@123");
 		
-		for(int i=1; i<=3; i++)
-		{
-			for(int j=1; j<=3; j++ )
-			{
-				if(i==2 && j==2)
-				{
-					break;
-				}
-				System.out.println(i+" "+j);
-				
-			}
-			
+		Iterator<Object> it=l1.iterator();
+		
+		//ArrayList al=new ArrayList<>();
+		
+ while(it.hasNext())
+ {
+	 System.out.println(it.next());
+ }
+		
+		
 		}
 
 	}
 
-}
+
