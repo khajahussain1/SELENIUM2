@@ -5,7 +5,6 @@ interface Banks
 	float rateofintrest();
 	
 	
-	
 }
 
 class Statebank implements Banks

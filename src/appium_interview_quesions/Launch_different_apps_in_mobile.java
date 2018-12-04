@@ -13,6 +13,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class Launch_different_apps_in_mobile {
+	
 	AppiumDriverLocalService service;
 
 	AppiumDriver<MobileElement> driver;
@@ -38,8 +39,6 @@ public class Launch_different_apps_in_mobile {
 		cap.setCapability("deviceName", "HTC Desire 626 dual sim");
 		cap.setCapability("appPackage", "com.android.calculator2");
 		cap.setCapability("appActivity", "com.android.calculator2.Calculator");
-//		cap.setCapability("appPackage", "in.amazon.mShop.android.shopping");
-//		cap.setCapability("appActivity", "com.amazon.mShop.home.HomeActivity");
 		URL url= new URL("http://0.0.0.0:4723/wd/hub");
 		driver = new AndroidDriver<MobileElement>(url, cap);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
