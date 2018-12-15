@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-28T14:44:26Z" name="Default suite" finished-at="2018-11-28T14:44:26Z" duration-ms="74">
+  <suite name="Default suite" duration-ms="18291" started-at="2018-12-15T07:43:59Z" finished-at="2018-12-15T07:44:18Z">
     <groups>
     </groups>
-    <test started-at="2018-11-28T14:44:26Z" name="Default test" finished-at="2018-11-28T14:44:26Z" duration-ms="74">
-      <class name="s.A2">
-        <test-method signature="f()[pri:0, instance:s.A2@568ff82]" started-at="2018-11-28T20:14:26Z" name="f" finished-at="2018-11-28T20:14:26Z" duration-ms="39" status="PASS">
+    <test name="Default test" duration-ms="18291" started-at="2018-12-15T07:43:59Z" finished-at="2018-12-15T07:44:18Z">
+      <class name="Interview_Quesions.ExcerciseRobot1">
+        <test-method status="PASS" signature="screen_capture_using_robot_full()[pri:0, instance:Interview_Quesions.ExcerciseRobot1@4f7d0008]" name="screen_capture_using_robot_full" duration-ms="18236" started-at="2018-12-15T13:13:59Z" finished-at="2018-12-15T13:14:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- s.A2 -->
+        </test-method> <!-- screen_capture_using_robot_full -->
+      </class> <!-- Interview_Quesions.ExcerciseRobot1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

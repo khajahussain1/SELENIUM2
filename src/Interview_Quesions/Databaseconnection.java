@@ -37,7 +37,7 @@ public class Databaseconnection
 	 {
 	  try{
 	   Class.forName("oracle.jdbc.driver.OracleDriver"); //For SQL
-	      Connection con = DriverManager.getConnection(
+	      con = DriverManager.getConnection(
 	   driver_DBPath, DB_username,DB_password );
 	      stmt = con.createStatement();
 	  }catch(Exception e){System.out.println(e.getMessage());}
