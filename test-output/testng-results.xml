@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18291" started-at="2018-12-15T07:43:59Z" finished-at="2018-12-15T07:44:18Z">
+  <suite name="Default suite" duration-ms="24007" started-at="2018-12-15T10:30:24Z" finished-at="2018-12-15T10:30:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18291" started-at="2018-12-15T07:43:59Z" finished-at="2018-12-15T07:44:18Z">
-      <class name="Interview_Quesions.ExcerciseRobot1">
-        <test-method status="PASS" signature="screen_capture_using_robot_full()[pri:0, instance:Interview_Quesions.ExcerciseRobot1@4f7d0008]" name="screen_capture_using_robot_full" duration-ms="18236" started-at="2018-12-15T13:13:59Z" finished-at="2018-12-15T13:14:18Z">
+    <test name="Default test" duration-ms="24007" started-at="2018-12-15T10:30:24Z" finished-at="2018-12-15T10:30:48Z">
+      <class name="Interview_Quesions.WindowHandles">
+        <test-method status="PASS" signature="windows_Demo()[pri:0, instance:Interview_Quesions.WindowHandles@4f7d0008]" name="windows_Demo" duration-ms="23938" started-at="2018-12-15T16:00:24Z" finished-at="2018-12-15T16:00:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screen_capture_using_robot_full -->
-      </class> <!-- Interview_Quesions.ExcerciseRobot1 -->
+        </test-method> <!-- windows_Demo -->
+      </class> <!-- Interview_Quesions.WindowHandles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

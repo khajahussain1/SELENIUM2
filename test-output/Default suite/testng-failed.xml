@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Interview_Quesions.ExcerciseRobot1">
+      <class name="Interview_Quesions.WindowHandles">
         <methods>
-          <include name="screen_capture_using_robot"/>
+          <include name="windows"/>
         </methods>
-      </class> <!-- Interview_Quesions.ExcerciseRobot1 -->
+      </class> <!-- Interview_Quesions.WindowHandles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
