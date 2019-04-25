@@ -29,19 +29,14 @@
 				<version>2.18.1</version>
 				<configuration>
 
-					<!-- <configuration>
-						<systemPropertVariables>
-							<url>${Durl}</url>
-							<username>${Dusername}</username>
-							<environment>${environment}</environment>
-						</systemPropertVariables>
-					</configuration> -->
+					<!-- <configuration> <systemPropertVariables> <url>${Durl}</url> <username>${Dusername}</username> 
+						<environment>${environment}</environment> </systemPropertVariables> </configuration> -->
 
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
 						<!-- <suiteXmlFile>Multiple.xml</suiteXmlFile> -->
 						<!-- <suiteXmlFile>Multiple.xml</suiteXmlFile> -->
-						 <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 
 
 					</suiteXmlFiles>

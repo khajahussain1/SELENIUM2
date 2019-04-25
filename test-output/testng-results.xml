@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-28T14:44:26Z" name="Default suite" finished-at="2018-11-28T14:44:26Z" duration-ms="74">
+  <suite name="Default suite" duration-ms="24007" started-at="2018-12-15T10:30:24Z" finished-at="2018-12-15T10:30:48Z">
     <groups>
     </groups>
-    <test started-at="2018-11-28T14:44:26Z" name="Default test" finished-at="2018-11-28T14:44:26Z" duration-ms="74">
-      <class name="s.A2">
-        <test-method signature="f()[pri:0, instance:s.A2@568ff82]" started-at="2018-11-28T20:14:26Z" name="f" finished-at="2018-11-28T20:14:26Z" duration-ms="39" status="PASS">
+    <test name="Default test" duration-ms="24007" started-at="2018-12-15T10:30:24Z" finished-at="2018-12-15T10:30:48Z">
+      <class name="Interview_Quesions.WindowHandles">
+        <test-method status="PASS" signature="windows_Demo()[pri:0, instance:Interview_Quesions.WindowHandles@4f7d0008]" name="windows_Demo" duration-ms="23938" started-at="2018-12-15T16:00:24Z" finished-at="2018-12-15T16:00:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- s.A2 -->
+        </test-method> <!-- windows_Demo -->
+      </class> <!-- Interview_Quesions.WindowHandles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
