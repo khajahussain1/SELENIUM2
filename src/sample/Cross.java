@@ -39,7 +39,7 @@ public class Cross {
 		  System.out.println("environment------"+environment);
 		  
 		  driver.get(url);*/
-		  driver.get("https://www.spicejet.com/");
+		  driver.get("http://www.gmail.com");
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		  
 	  }else if(browser.equalsIgnoreCase("gecko"))
@@ -57,7 +57,7 @@ public class Cross {
 		  InternetExplorerDriver  driver = new InternetExplorerDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20000, TimeUnit.SECONDS);
-		  driver.get("https://www.spicejet.com/");
+		  driver.get("http://spicejet.com/");
 		   
 	  }
 	  	  
