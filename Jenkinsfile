@@ -1,4 +1,4 @@
-node {
+pipeline {
 
     stage('SCM checkout') {
        git 'https://github.com/khajahussain1/SELENIUM2'
