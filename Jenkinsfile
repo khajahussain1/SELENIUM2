@@ -1,6 +1,6 @@
 node {
 
-    stage(SCM checkout) {
+    stage('SCM checkout') {
        git 'https://github.com/khajahussain1/SELENIUM2'
         
     }
