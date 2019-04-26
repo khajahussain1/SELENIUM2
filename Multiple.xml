@@ -5,7 +5,7 @@
 
 	<listeners>
 
-		<listener class-name="p.Listener" />
+		 <listener class-name="sample.Listener" />
 
 		<listener class-name="sample.ExtentReporterNG" />
 

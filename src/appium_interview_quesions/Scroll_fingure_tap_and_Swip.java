@@ -61,7 +61,7 @@ public class Scroll_fingure_tap_and_Swip {
 		int y = (int) (height * 0.20);
 		int startx = (int) (width * 0.75);
 		int endx = (int) (width * 0.35);
-		driver.swipe(startx, y, endx, y, 500);
+		//driver.swipe(startx, y, endx, y, 500);
 	}
 
 	public void verticalSwipe() {
@@ -71,7 +71,7 @@ public class Scroll_fingure_tap_and_Swip {
 		int x = width / 2;
 		int starty = (int) (height * 0.80);
 		int endy = (int) (height * 0.20);
-		driver.swipe(x, starty, x, endy, 500);
+		//driver.swipe(x, starty, x, endy, 500);
 
 	}
 	

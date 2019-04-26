@@ -6,6 +6,11 @@
 	<groupId>SELENIUM</groupId>
 	<artifactId>SELENIUM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<suiteXmlFile>Multiple.xml</suiteXmlFile>
+
+	</properties>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
@@ -35,7 +40,7 @@
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
 						<!-- <suiteXmlFile>Multiple.xml</suiteXmlFile> -->
-						<!-- <suiteXmlFile>Multiple.xml</suiteXmlFile> -->
+
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 
 
@@ -45,6 +50,11 @@
 		</plugins>
 	</build>
 	<dependencies>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>5.0.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-server</artifactId>
