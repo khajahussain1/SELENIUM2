@@ -8,8 +8,8 @@ node {
         
    stage ('Compile Stage') {
         
-            def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
-                 sh "${mvnHome}/bin/mvn install"             
+           def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
+                 sh "${mvnHome}/bin/mvn package"  
                                     
                 }
             }
